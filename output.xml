@@ -1,145 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-12T13:36:34.658468" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-12T23:00:24.529434" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
 <test id="s1-t1" name="Se connecter" line="48">
 <kw name="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:35.167605" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-02-12T23:00:25.048242" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-12T13:36:35.167152" elapsed="3.546788"/>
+<status status="PASS" start="2025-02-12T23:00:25.047772" elapsed="4.739692"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-12T13:36:38.714543" elapsed="0.067416"/>
+<status status="PASS" start="2025-02-12T23:00:29.787863" elapsed="0.053956"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:38.786261" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-02-12T23:00:29.845655" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:38.783021" elapsed="0.155207"/>
+<status status="PASS" start="2025-02-12T23:00:29.842315" elapsed="0.161491"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:38.941488" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-02-12T23:00:30.005116" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:38.939685" elapsed="0.125608"/>
+<status status="PASS" start="2025-02-12T23:00:30.004149" elapsed="0.130545"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:39.067126" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-02-12T23:00:30.135863" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:39.065801" elapsed="1.468772"/>
+<status status="PASS" start="2025-02-12T23:00:30.135028" elapsed="1.633333"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-12T13:36:42.535671" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-12T23:00:33.770144" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-12T13:36:40.534930" elapsed="2.001156"/>
+<status status="PASS" start="2025-02-12T23:00:31.769028" elapsed="2.001584"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:42.587727" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-02-12T23:00:33.841750" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-12T13:36:42.536534" elapsed="0.051695"/>
+<status status="PASS" start="2025-02-12T23:00:33.771096" elapsed="0.071102"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-12T13:36:35.165752" elapsed="7.422931"/>
+<status status="PASS" start="2025-02-12T23:00:25.046411" elapsed="8.797177"/>
 </kw>
 <kw name="Creer un fichier Html">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:42.592148" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
+<msg time="2025-02-12T23:00:33.850146" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
 <arg>${CreerFichierHtml.link_mesfichiers}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:42.590698" elapsed="1.776884"/>
+<status status="PASS" start="2025-02-12T23:00:33.848656" elapsed="2.017169"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:44.368729" level="INFO">Clicking element '//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']'.</msg>
+<msg time="2025-02-12T23:00:35.868112" level="INFO">Clicking element '//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']'.</msg>
 <arg>${CreerFichierHtml.link_creer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:44.367944" elapsed="0.115590"/>
+<status status="PASS" start="2025-02-12T23:00:35.866747" elapsed="0.173984"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:44.485168" level="INFO">Clicking element '//li[@id='yui-gen2']'.</msg>
+<msg time="2025-02-12T23:00:36.044174" level="INFO">Clicking element '//li[@id='yui-gen2']'.</msg>
 <arg>${CreerFichierHtml.link_fichierHtml}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:44.484110" elapsed="0.483523"/>
+<status status="PASS" start="2025-02-12T23:00:36.041378" elapsed="0.862103"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:44.968941" level="INFO">Typing text 'MonFichier3' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']'.</msg>
+<msg time="2025-02-12T23:00:36.904814" level="INFO">Typing text 'MonFichier4' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']'.</msg>
 <arg>${CreerFichierHtml.input_name}</arg>
 <arg>${vnomFichier}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:44.968122" elapsed="0.281196"/>
+<status status="PASS" start="2025-02-12T23:00:36.903924" elapsed="0.202914"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:45.250443" level="INFO">Typing text 'Titre3' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']'.</msg>
+<msg time="2025-02-12T23:00:37.108032" level="INFO">Typing text 'Titre4' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']'.</msg>
 <arg>${CreerFichierHtml.input_titre}</arg>
 <arg>${vtitre}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:45.249638" elapsed="0.113133"/>
+<status status="PASS" start="2025-02-12T23:00:37.107161" elapsed="0.127384"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:45.363810" level="INFO">Typing text 'Description3' into text field '//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']'.</msg>
+<msg time="2025-02-12T23:00:37.236662" level="INFO">Typing text 'Description4' into text field '//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']'.</msg>
 <arg>${CreerFichierHtml.textarea_description}</arg>
 <arg>${vdescription}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:45.363099" elapsed="0.111574"/>
+<status status="PASS" start="2025-02-12T23:00:37.235090" elapsed="0.113691"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:45.475743" level="INFO">Clicking element '//button[@id='template_x002e_create-content_x002e_create-content_x0023_default-form-submit-button']'.</msg>
+<msg time="2025-02-12T23:00:37.349903" level="INFO">Clicking element '//button[@id='template_x002e_create-content_x002e_create-content_x0023_default-form-submit-button']'.</msg>
 <arg>${CreerFichierHtml.btn_creer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:45.475058" elapsed="0.079179"/>
+<status status="PASS" start="2025-02-12T23:00:37.349239" elapsed="0.083341"/>
 </kw>
-<arg>MonFichier3</arg>
-<arg>Titre3</arg>
-<arg>Description3</arg>
-<status status="PASS" start="2025-02-12T13:36:42.589637" elapsed="2.965086"/>
+<arg>MonFichier4</arg>
+<arg>Titre4</arg>
+<arg>Description4</arg>
+<status status="PASS" start="2025-02-12T23:00:33.847483" elapsed="3.585507"/>
 </kw>
 <kw name="Logout">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-12T13:36:46.559848" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-12T23:00:38.435696" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-12T13:36:45.558983" elapsed="1.001235"/>
+<status status="PASS" start="2025-02-12T23:00:37.435065" elapsed="1.001083"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:46.562079" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
+<msg time="2025-02-12T23:00:38.438555" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
 <arg>${Connexion.link_Acceuil}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:46.560584" elapsed="0.938843"/>
+<status status="PASS" start="2025-02-12T23:00:38.436638" elapsed="1.162896"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:47.501409" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
+<msg time="2025-02-12T23:00:39.601320" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
 <arg>${Connexion.link_user}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:47.500017" elapsed="0.149992"/>
+<status status="PASS" start="2025-02-12T23:00:39.600039" elapsed="0.154513"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-12T13:36:48.651387" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-12T23:00:40.755898" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-12T13:36:47.650530" elapsed="1.001137"/>
+<status status="PASS" start="2025-02-12T23:00:39.755065" elapsed="1.001883"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-12T13:36:48.652582" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
+<msg time="2025-02-12T23:00:40.763989" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
 <arg>${Connexion.link_deconnexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-12T13:36:48.651920" elapsed="0.097657"/>
+<status status="PASS" start="2025-02-12T23:00:40.758015" elapsed="0.127827"/>
 </kw>
-<status status="PASS" start="2025-02-12T13:36:45.558261" elapsed="3.191559"/>
+<status status="PASS" start="2025-02-12T23:00:37.434228" elapsed="3.451871"/>
 </kw>
-<status status="PASS" start="2025-02-12T13:36:35.164189" elapsed="13.586320"/>
+<status status="PASS" start="2025-02-12T23:00:25.044816" elapsed="15.841973"/>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="PASS" start="2025-02-12T13:36:34.668793" elapsed="14.084283"/>
+<status status="PASS" start="2025-02-12T23:00:24.537418" elapsed="16.351841"/>
 </suite>
 <statistics>
 <total>

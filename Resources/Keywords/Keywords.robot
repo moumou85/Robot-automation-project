@@ -47,7 +47,7 @@ Creer un fichier Html
 
 Se connecter
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Creer un fichier Html    MonFichier3    Titre3    Description3    
+    Creer un fichier Html    MonFichier4    Titre4    Description4    
     Logout
    
 
