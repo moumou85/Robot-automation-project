@@ -24,3 +24,16 @@ class SupprimerDossier:
     btn_articleSelectionnes = "//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-selectedItems-button-button']"
     link_supprimer = "//li[@id='yui-gen12']/a/span/font/font"
     btn_supprimer = "//button[@id='yui-gen196-button']"
+
+
+class SupprimerSite:
+
+    link_sites = "//span[@id='HEADER_SITES_MENU_text']/font/font"
+    link_rechercheDeSite = "//td[@id='HEADER_SITES_MENU_SITE_FINDER_text']/a/font/font"
+    btn_recherche = "//button[@id='template_x002e_site-finder_x002e_site-finder_x0023_default-button-button']/font/font"
+    link_sitename1 = "//font[text()='"
+    link_sitename2 = "']/ancestor::h3[@class='sitename']"
+    img_configuration = "//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']/img"
+    link_supprimerSite = "//td[@id='HEADER_DELETE_SITE_text']/font/font"
+    btn_daccord = "//span[@id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']"
+    

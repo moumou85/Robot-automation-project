@@ -51,8 +51,8 @@ Supprimer un dossier
     # Checkbox Should Be Selected    
     Sleep    2s
     # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
-    Mouse Over    //tr[@id='yui-rec403']
-    Sleep    2s
+    # Mouse Over    //tr[@id='yui-rec403']
+    # Sleep    2s
     Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
     Click Element    ${SupprimerDossier.btn_articleSelectionnes}
     Click Element    ${SupprimerDossier.link_supprimer}

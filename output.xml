@@ -1,113 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-13T21:02:15.785735" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-13T21:13:10.365410" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
 <test id="s1-t1" name="Se connecter" line="63">
 <kw name="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:16.310944" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-02-13T21:13:10.916375" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-13T21:02:16.310511" elapsed="4.534479"/>
+<status status="PASS" start="2025-02-13T21:13:10.915520" elapsed="4.038517"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-13T21:02:20.845545" elapsed="0.048197"/>
+<status status="PASS" start="2025-02-13T21:13:14.954555" elapsed="0.081061"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:20.899872" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-02-13T21:13:15.039198" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T21:02:20.894355" elapsed="0.141324"/>
+<status status="PASS" start="2025-02-13T21:13:15.036562" elapsed="0.180064"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:21.036825" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-02-13T21:13:15.218499" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T21:02:21.036011" elapsed="0.117426"/>
+<status status="PASS" start="2025-02-13T21:13:15.217105" elapsed="0.139194"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:21.154398" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-02-13T21:13:15.358973" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T21:02:21.153738" elapsed="2.375948"/>
+<status status="PASS" start="2025-02-13T21:13:15.356919" elapsed="1.730876"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T21:02:25.532775" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-13T21:13:19.090124" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T21:02:23.530567" elapsed="2.003704"/>
+<status status="PASS" start="2025-02-13T21:13:17.088272" elapsed="2.002374"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:25.621997" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-02-13T21:13:19.144192" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-13T21:02:25.535313" elapsed="0.087147"/>
+<status status="PASS" start="2025-02-13T21:13:19.091138" elapsed="0.053509"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-13T21:02:16.309095" elapsed="9.313843"/>
+<status status="PASS" start="2025-02-13T21:13:10.912944" elapsed="8.232130"/>
 </kw>
 <kw name="Supprimer un dossier">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:25.627025" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
+<msg time="2025-02-13T21:13:19.149207" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
 <arg>${SupprimerDossier.link_mesfichiers}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T21:02:25.625577" elapsed="2.469948"/>
+<status status="PASS" start="2025-02-13T21:13:19.147930" elapsed="2.267387"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T21:02:30.098314" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-13T21:13:23.418173" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T21:02:28.096734" elapsed="2.001902"/>
-</kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2025-02-13T21:02:30.099345" level="INFO">Simulating Mouse Over on element '//tr[@id='yui-rec403']'.</msg>
-<msg time="2025-02-13T21:02:30.237025" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-13T21:02:30.237569" level="FAIL">Element with locator '//tr[@id='yui-rec403']' not found.</msg>
-<arg>//tr[@id='yui-rec403']</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="FAIL" start="2025-02-13T21:02:30.098923" elapsed="0.145053">Element with locator '//tr[@id='yui-rec403']' not found.</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-13T21:02:30.244653" elapsed="0.000269"/>
+<status status="PASS" start="2025-02-13T21:13:21.416530" elapsed="2.002116"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:13:23.419652" level="INFO">Clicking element '//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]'.</msg>
+<msg time="2025-02-13T21:13:23.551356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-13T21:13:23.551799" level="FAIL">Element with locator '//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]' not found.</msg>
 <arg>//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-13T21:02:30.245498" elapsed="0.000300"/>
+<status status="FAIL" start="2025-02-13T21:13:23.419057" elapsed="0.140177">Element with locator '//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]' not found.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${SupprimerDossier.btn_articleSelectionnes}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-13T21:02:30.246704" elapsed="0.000251"/>
+<status status="NOT RUN" start="2025-02-13T21:13:23.559810" elapsed="0.000261"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${SupprimerDossier.link_supprimer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-13T21:02:30.247325" elapsed="0.000191"/>
+<status status="NOT RUN" start="2025-02-13T21:13:23.560563" elapsed="0.000331"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${SupprimerDossier.btn_supprimer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-13T21:02:30.247814" elapsed="0.000165"/>
+<status status="NOT RUN" start="2025-02-13T21:13:23.561336" elapsed="0.000302"/>
 </kw>
 <arg>Dossier2</arg>
-<status status="FAIL" start="2025-02-13T21:02:25.624560" elapsed="4.623755">Element with locator '//tr[@id='yui-rec403']' not found.</status>
+<status status="FAIL" start="2025-02-13T21:13:19.146747" elapsed="4.415337">Element with locator '//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]' not found.</status>
 </kw>
 <kw name="Logout">
-<status status="NOT RUN" start="2025-02-13T21:02:30.284533" elapsed="0.000273"/>
+<status status="NOT RUN" start="2025-02-13T21:13:23.563606" elapsed="0.000257"/>
 </kw>
-<status status="FAIL" start="2025-02-13T21:02:16.307692" elapsed="13.978353">Element with locator '//tr[@id='yui-rec403']' not found.</status>
+<status status="FAIL" start="2025-02-13T21:13:10.911246" elapsed="12.699285">Element with locator '//a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]' not found.</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-13T21:02:15.798317" elapsed="14.524467"/>
+<status status="FAIL" start="2025-02-13T21:13:10.377572" elapsed="13.288199"/>
 </suite>
 <statistics>
 <total>
