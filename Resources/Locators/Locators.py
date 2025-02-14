@@ -17,3 +17,10 @@ class CreerFichierHtml:
     textarea_description = "//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']"
     btn_creer = "//button[@id='template_x002e_create-content_x002e_create-content_x0023_default-form-submit-button']"
 
+class SupprimerDossier:
+    link_mesfichiers = "//span[@id='HEADER_MY_FILES_text']"
+    checkBox1_dossier = "//font[text()='"
+    checkBox2_dossier = "']/ancestor::tr/td//input[@type='checkbox']"
+    btn_articleSelectionnes = "//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-selectedItems-button-button']"
+    link_supprimer = "//li[@id='yui-gen12']/a/span/font/font"
+    btn_supprimer = "//button[@id='yui-gen196-button']"

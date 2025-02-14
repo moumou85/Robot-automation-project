@@ -30,6 +30,7 @@ Logout
     Click Element    ${Connexion.link_user}
     Sleep    1s
     Click Element    ${Connexion.link_deconnexion}
+    Close Browser
     
 Creer un fichier Html
     [Arguments]    ${vnomFichier}    ${vtitre}    ${vdescription}
@@ -43,11 +44,26 @@ Creer un fichier Html
     Click Element    ${CreerFichierHtml.btn_creer}
     
 
+
+Supprimer un dossier
+    [Arguments]    ${nomDossier}    
+    Click Element    ${SupprimerDossier.link_mesfichiers}
+    # Checkbox Should Be Selected    
+    Sleep    2s
+    # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
+    Mouse Over    //tr[@id='yui-rec403']
+    Sleep    2s
+    Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
+    Click Element    ${SupprimerDossier.btn_articleSelectionnes}
+    Click Element    ${SupprimerDossier.link_supprimer}
+    Click Element    ${SupprimerDossier.btn_supprimer}
+
 *** Test Cases ***
 
 Se connecter
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Creer un fichier Html    MonFichier4    Titre4    Description4    
+    # Creer un fichier Html    MonFichier4    Titre4    Description4  
+    Supprimer un dossier    Dossier2  
     Logout
    
 
