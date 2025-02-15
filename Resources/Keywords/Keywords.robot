@@ -2,6 +2,7 @@
 
 Documentation    Fichier Contenant les mots cles de l'ensemble du projet alfresco
 Library    SeleniumLibrary
+Library    XML
 Variables    ../Locators/Locators.py
 
 *** Variables ***
@@ -51,13 +52,15 @@ Supprimer un dossier
     # Checkbox Should Be Selected    
     Sleep    2s
     # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
-    # Mouse Over    //tr[@id='yui-rec403']
-    # Sleep    2s
-    Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
-    Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
-    Click Element    ${SupprimerDossier.btn_articleSelectionnes}
-    Click Element    ${SupprimerDossier.link_supprimer}
-    Click Element    ${SupprimerDossier.btn_supprimer}
+    Mouse Over    //font[@id="yui-gen136"]
+    Sleep    1s
+    Click Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'More...')]
+    Clear Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'Delete Folder')]
+    # Click Element    ${SupprimerDossier.btn_articleSelectionnes}
+    # Click Element    ${SupprimerDossier.link_supprimer}
+    # Click Element    ${SupprimerDossier.btn_supprimer}
+    Click Element    //button[contains(.,'Delete')]/ancestor::div[@id='prompt']
+    
 
 *** Test Cases ***
 
@@ -67,6 +70,27 @@ Se connecter
     Supprimer un dossier    Dossier2  
     Logout
    
+
+Supprimer un dossier
+       
+    Login    ${vURL}    ${vLogin}    ${vPassword}
+
+    Click Element    ${SupprimerDossier.link_mesfichiers}
+    # Checkbox Should Be Selected    
+    
+    # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
+    Mouse Over    //a[text()='Dossier2']
+    
+    # Click Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'More...')]
+    Click Element    //a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']
+    
+    Clear Element    //a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']
+    # Click Element    ${SupprimerDossier.btn_articleSelectionnes}
+    # Click Element    ${SupprimerDossier.link_supprimer}
+    # Click Element    ${SupprimerDossier.btn_supprimer}
+    Click Element    //button[contains(.,'Delete')]/ancestor::div[@id='prompt']
+
+    Logout
 
 
     
