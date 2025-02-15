@@ -54,6 +54,7 @@ Supprimer un dossier
     # Mouse Over    //tr[@id='yui-rec403']
     # Sleep    2s
     Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
+    Click Element    //a[contains(.,'Dossier2')]/../../../../../td//div//div//div//a[contains(.,'Plus...')]
     Click Element    ${SupprimerDossier.btn_articleSelectionnes}
     Click Element    ${SupprimerDossier.link_supprimer}
     Click Element    ${SupprimerDossier.btn_supprimer}
