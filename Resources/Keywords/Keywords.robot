@@ -83,7 +83,7 @@ Supprimer un dossier
     
     # Click Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'More...')]
     Click Element    //a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']
-    
+    Sleep    120s
     Clear Element    //a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']
     # Click Element    ${SupprimerDossier.btn_articleSelectionnes}
     # Click Element    ${SupprimerDossier.link_supprimer}
