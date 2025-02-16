@@ -1,99 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-15T21:59:21.596944" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-15T22:17:35.763092" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
 <test id="s1-t1" name="Supprimer un dossier" line="74">
 <kw name="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:22.147040" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-02-15T22:17:36.273598" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-15T21:59:22.146172" elapsed="4.140168"/>
+<status status="PASS" start="2025-02-15T22:17:36.272393" elapsed="3.531133"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-15T21:59:26.288696" elapsed="0.096423"/>
+<status status="PASS" start="2025-02-15T22:17:39.804073" elapsed="0.082497"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:26.392553" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-02-15T22:17:39.890525" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:26.385721" elapsed="0.397679"/>
+<status status="PASS" start="2025-02-15T22:17:39.887378" elapsed="0.171137"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:26.784478" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-02-15T22:17:40.062203" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:26.783761" elapsed="0.116564"/>
+<status status="PASS" start="2025-02-15T22:17:40.058901" elapsed="0.130223"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:26.901297" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-02-15T22:17:40.190262" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:26.900642" elapsed="1.997695"/>
+<status status="PASS" start="2025-02-15T22:17:40.189468" elapsed="1.716216"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T21:59:30.899959" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-15T22:17:43.907978" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T21:59:28.898868" elapsed="2.001411"/>
+<status status="PASS" start="2025-02-15T22:17:41.906263" elapsed="2.002167"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:30.943840" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-02-15T22:17:43.952561" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-15T21:59:30.900581" elapsed="0.043739"/>
+<status status="PASS" start="2025-02-15T22:17:43.909714" elapsed="0.043320"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-15T21:59:22.142342" elapsed="8.802446"/>
+<status status="PASS" start="2025-02-15T22:17:36.270329" elapsed="7.683120"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:30.947747" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
+<msg time="2025-02-15T22:17:43.956398" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
 <arg>${SupprimerDossier.link_mesfichiers}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:30.946122" elapsed="2.653374"/>
+<status status="PASS" start="2025-02-15T22:17:43.954944" elapsed="2.083719"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:33.610815" level="INFO">Simulating Mouse Over on element '//a[text()='Dossier2']'.</msg>
+<msg time="2025-02-15T22:17:46.039987" level="INFO">Simulating Mouse Over on element '//a[text()='Dossier2']'.</msg>
 <arg>//a[text()='Dossier2']</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:33.610000" elapsed="0.381143"/>
+<status status="PASS" start="2025-02-15T22:17:46.039450" elapsed="0.324914"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T21:59:33.994129" level="INFO">Clicking element '//a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']'.</msg>
+<msg time="2025-02-15T22:17:46.368136" level="INFO">Clicking element '//a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']'.</msg>
 <arg>//a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T21:59:33.993534" elapsed="0.157756"/>
+<status status="PASS" start="2025-02-15T22:17:46.366662" elapsed="0.145097"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T22:01:34.160230" level="INFO">Slept 2 minutes.</msg>
-<arg>120s</arg>
+<msg time="2025-02-15T22:17:48.514342" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T21:59:34.158614" elapsed="120.002107"/>
-</kw>
-<kw name="Clear Element" owner="XML">
-<msg time="2025-02-15T22:01:34.172417" level="FAIL">OSError: [Errno 22] Invalid argument: "//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']"</msg>
-<arg>//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']</arg>
-<doc>Clears the contents of the specified element.</doc>
-<status status="FAIL" start="2025-02-15T22:01:34.162424" elapsed="0.016327">OSError: [Errno 22] Invalid argument: "//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']"</status>
+<status status="PASS" start="2025-02-15T22:17:46.512624" elapsed="2.002031"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[contains(.,'Delete')]/ancestor::div[@id='prompt']</arg>
+<msg time="2025-02-15T22:17:48.516692" level="INFO">Clicking element '//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']'.</msg>
+<arg>//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-15T22:01:34.180269" elapsed="0.000374"/>
+<status status="PASS" start="2025-02-15T22:17:48.516035" elapsed="0.169442"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-15T22:18:48.689209" level="INFO">Slept 1 minute.</msg>
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-15T22:17:48.688187" elapsed="60.001981"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-15T22:18:48.693869" level="INFO">Clicking element '//button[contains(.,'Supprimer')]/ancestor::div[@id='prompt']'.</msg>
+<arg>//button[contains(.,'Supprimer')]/ancestor::div[@id='prompt']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-15T22:18:48.692851" elapsed="0.109899"/>
 </kw>
 <kw name="Logout">
-<status status="NOT RUN" start="2025-02-15T22:01:34.182518" elapsed="0.003526"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-15T22:18:49.805451" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-15T22:18:48.804645" elapsed="1.001646"/>
 </kw>
-<status status="FAIL" start="2025-02-15T21:59:22.140983" elapsed="132.046997">OSError: [Errno 22] Invalid argument: "//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']"</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-15T22:18:49.809163" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
+<msg time="2025-02-15T22:18:51.103082" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-15T22:18:51.103686" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF684CB2EC5+28789]
+	(No symbol) [0x00007FF684C1F870]
+	(No symbol) [0x00007FF684AB8F9A]
+	(No symbol) [0x00007FF684B170C9]
+	(No symbol) [0x00007FF684B14A92]
+	(No symbol) [0x00007FF684B11B31]
+	(No symbol) [0x00007FF684B10A41]
+	(No symbol) [0x00007FF684B02234]
+	(No symbol) [0x00007FF684B3721A]
+	(No symbol) [0x00007FF684B01AE6]
+	(No symbol) [0x00007FF684B37430]
+	(No symbol) [0x00007FF684B5F6C3]
+	(No symbol) [0x00007FF684B36FF3]
+	(No symbol) [0x00007FF684AFFF0E]
+	(No symbol) [0x00007FF684B01193]
+	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
+	GetHandleVerifier [0x00007FF6850171A3+3584851]
+	GetHandleVerifier [0x00007FF68500C44D+3540477]
+	GetHandleVerifier [0x00007FF684D78B6A+838938]
+	(No symbol) [0x00007FF684C2A4EF]
+	(No symbol) [0x00007FF684C26954]
+	(No symbol) [0x00007FF684C26AF6]
+	(No symbol) [0x00007FF684C16499]
+	BaseThreadInitThunk [0x00007FFA4EF67374+20]
+	RtlUserThreadStart [0x00007FFA50E1CC91+33]
+</msg>
+<arg>${Connexion.link_Acceuil}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-15T22:18:49.807020" elapsed="1.305388">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF684CB2EC5+28789]
+	(No symbol) [0x00007FF684C1F870]
+	(No symbol) [0x00007FF684AB8F9A]
+	(No symbol) [0x00007FF684B170C9]
+	(No symbol) [0x00007FF684B14A92]
+	(No symbol) [0x00007FF684B11B31]
+	(No symbol) [0x00007FF684B10A41]
+	(No symbol) [0x00007FF684B02234]
+	(No symbol) [0x00007FF684B3721A]
+	(No symbol) [0x00007FF684B01AE6]
+	(No symbol) [0x00007FF684B37430]
+	(No symbol) [0x00007FF684B5F6C3]
+	(No symbol) [0x00007FF684B36FF3]
+	(No symbol) [0x00007FF684AFFF0E]
+	(No symbol) [0x00007FF684B01193]
+	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
+	GetHandleVerifier [0x00007FF6850171A3+3584851]
+	GetHandleVerifier [0x00007FF68500C44D+3540477]
+	GetHandleVerifier [0x00007FF684D78B6A+838938]
+	(No symbol) [0x00007FF684C2A4EF]
+	(No symbol) [0x00007FF684C26954]
+	(No symbol) [0x00007FF684C26AF6]
+	(No symbol) [0x00007FF684C16499]
+	BaseThreadInitThunk [0x00007FFA4EF67374+20]
+	RtlUserThreadStart [0x00007FFA50E1CC91+33]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Connexion.link_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-15T22:18:51.113173" elapsed="0.000249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-15T22:18:51.113824" elapsed="0.000140"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Connexion.link_deconnexion}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-15T22:18:51.114199" elapsed="0.001596"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-02-15T22:18:51.116568" elapsed="0.000188"/>
+</kw>
+<status status="FAIL" start="2025-02-15T22:18:48.803831" elapsed="2.313257">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF684CB2EC5+28789]
+	(No symbol) [0x00007FF684C1F870]
+	(No symbol) [0x00007FF684AB8F9A]
+	(No symbol) [0x00007FF684B170C9]
+	(No symbol) [0x00007FF684B14A92]
+	(No symbol) [0x00007FF684B11B31]
+	(No symbol) [0x00007FF684B10A41]
+	(No symbol) [0x00007FF684B02234]
+	(No symbol) [0x00007FF684B3721A]
+	(No symbol) [0x00007FF684B01AE6]
+	(No symbol) [0x00007FF684B37430]
+	(No symbol) [0x00007FF684B5F6C3]
+	(No symbol) [0x00007FF684B36FF3]
+	(No symbol) [0x00007FF684AFFF0E]
+	(No symbol) [0x00007FF684B01193]
+	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
+	GetHandleVerifier [0x00007FF6850171A3+3584851]
+	GetHandleVerifier [0x00007FF68500C44D+3540477]
+	GetHandleVerifier [0x00007FF684D78B6A+838938]
+	(No symbol) [0x00007FF684C2A4EF]
+	(No symbol) [0x00007FF684C26954]
+	(No symbol) [0x00007FF684C26AF6]
+	(No symbol) [0x00007FF684C16499]
+	BaseThreadInitThunk [0x00007FFA4EF67374+20]
+	RtlUserThreadStart [0x00007FFA50E1CC91+33]
+</status>
+</kw>
+<status status="FAIL" start="2025-02-15T22:17:36.268511" elapsed="74.851258">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF684CB2EC5+28789]
+	(No symbol) [0x00007FF684C1F870]
+	(No symbol) [0x00007FF684AB8F9A]
+	(No symbol) [0x00007FF684B170C9]
+	(No symbol) [0x00007FF684B14A92]
+	(No symbol) [0x00007FF684B11B31]
+	(No symbol) [0x00007FF684B10A41]
+	(No symbol) [0x00007FF684B02234]
+	(No symbol) [0x00007FF684B3721A]
+	(No symbol) [0x00007FF684B01AE6]
+	(No symbol) [0x00007FF684B37430]
+	(No symbol) [0x00007FF684B5F6C3]
+	(No symbol) [0x00007FF684B36FF3]
+	(No symbol) [0x00007FF684AFFF0E]
+	(No symbol) [0x00007FF684B01193]
+	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
+	GetHandleVerifier [0x00007FF6850171A3+3584851]
+	GetHandleVerifier [0x00007FF68500C44D+3540477]
+	GetHandleVerifier [0x00007FF684D78B6A+838938]
+	(No symbol) [0x00007FF684C2A4EF]
+	(No symbol) [0x00007FF684C26954]
+	(No symbol) [0x00007FF684C26AF6]
+	(No symbol) [0x00007FF684C16499]
+	BaseThreadInitThunk [0x00007FFA4EF67374+20]
+	RtlUserThreadStart [0x00007FFA50E1CC91+33]
+</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-15T21:59:21.610964" elapsed="132.582331"/>
+<status status="FAIL" start="2025-02-15T22:17:35.772422" elapsed="75.356023"/>
 </suite>
 <statistics>
 <total>
