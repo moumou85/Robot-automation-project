@@ -1,251 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-15T22:17:35.763092" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-18T16:17:31.419778" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
-<test id="s1-t1" name="Supprimer un dossier" line="74">
+<test id="s1-t1" name="CT1" line="82">
 <kw name="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:36.273598" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-02-18T16:17:32.270435" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-15T22:17:36.272393" elapsed="3.531133"/>
+<status status="PASS" start="2025-02-18T16:17:32.269804" elapsed="3.915802"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-15T22:17:39.804073" elapsed="0.082497"/>
+<status status="PASS" start="2025-02-18T16:17:36.186457" elapsed="0.098506"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:39.890525" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-02-18T16:17:36.286885" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:39.887378" elapsed="0.171137"/>
+<status status="PASS" start="2025-02-18T16:17:36.285468" elapsed="0.188764"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:40.062203" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-02-18T16:17:36.479806" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:40.058901" elapsed="0.130223"/>
+<status status="PASS" start="2025-02-18T16:17:36.477537" elapsed="0.119908"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:40.190262" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-02-18T16:17:36.598801" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:40.189468" elapsed="1.716216"/>
+<status status="PASS" start="2025-02-18T16:17:36.597960" elapsed="1.404586"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T22:17:43.907978" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-18T16:17:40.004125" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T22:17:41.906263" elapsed="2.002167"/>
+<status status="PASS" start="2025-02-18T16:17:38.003067" elapsed="2.001362"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:43.952561" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-02-18T16:17:40.049807" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-15T22:17:43.909714" elapsed="0.043320"/>
+<status status="PASS" start="2025-02-18T16:17:40.004677" elapsed="0.045602"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-15T22:17:36.270329" elapsed="7.683120"/>
+<status status="PASS" start="2025-02-18T16:17:32.267987" elapsed="7.782748"/>
+</kw>
+<kw name="Creer un fichier Html">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:17:40.058148" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
+<arg>${CreerFichierHtml.link_mesfichiers}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T16:17:40.055697" elapsed="3.161745"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CreerFichierHtml.link_creer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T16:17:43.217807" elapsed="0.271526"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:43.956398" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
-<arg>${SupprimerDossier.link_mesfichiers}</arg>
+<msg time="2025-02-18T16:17:43.493325" level="INFO">Clicking element '//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']'.</msg>
+<arg>${CreerFichierHtml.link_creer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:43.954944" elapsed="2.083719"/>
-</kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:46.039987" level="INFO">Simulating Mouse Over on element '//a[text()='Dossier2']'.</msg>
-<arg>//a[text()='Dossier2']</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:46.039450" elapsed="0.324914"/>
+<status status="PASS" start="2025-02-18T16:17:43.491024" elapsed="0.122464"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:46.368136" level="INFO">Clicking element '//a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']'.</msg>
-<arg>//a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']</arg>
+<msg time="2025-02-18T16:17:43.615038" level="INFO">Clicking element '//li[@id='yui-gen2']'.</msg>
+<arg>${CreerFichierHtml.link_fichierHtml}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:46.366662" elapsed="0.145097"/>
+<status status="PASS" start="2025-02-18T16:17:43.613979" elapsed="0.553651"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T22:17:48.514342" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T22:17:46.512624" elapsed="2.002031"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:17:44.169613" level="INFO">Typing text 'MonFichier10' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']'.</msg>
+<arg>${CreerFichierHtml.input_name}</arg>
+<arg>${vnomFichier}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T16:17:44.168103" elapsed="0.195137"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:17:44.366452" level="INFO">Typing text 'Titre10' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']'.</msg>
+<arg>${CreerFichierHtml.input_titre}</arg>
+<arg>${vtitre}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T16:17:44.365127" elapsed="0.184688"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:17:44.551911" level="INFO">Typing text 'Description10' into text field '//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']'.</msg>
+<arg>${CreerFichierHtml.textarea_description}</arg>
+<arg>${vdescription}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T16:17:44.550315" elapsed="0.159598"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:17:49.830856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T16:17:49.831292" level="FAIL">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</msg>
+<arg>//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-18T16:17:44.710355" elapsed="5.125919">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2025-02-18T16:17:49.836977" elapsed="0.000335"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//body[@id="tinymce"]/p</arg>
+<arg>${vcontenu}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-18T16:17:49.837731" elapsed="0.000248"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-02-18T16:17:49.838352" elapsed="0.000201"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:17:48.516692" level="INFO">Clicking element '//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']'.</msg>
-<arg>//a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']</arg>
+<arg>${CreerFichierHtml.btn_creer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:17:48.516035" elapsed="0.169442"/>
+<status status="NOT RUN" start="2025-02-18T16:17:49.839966" elapsed="0.000309"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T22:18:48.689209" level="INFO">Slept 1 minute.</msg>
-<arg>60s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T22:17:48.688187" elapsed="60.001981"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:18:48.693869" level="INFO">Clicking element '//button[contains(.,'Supprimer')]/ancestor::div[@id='prompt']'.</msg>
-<arg>//button[contains(.,'Supprimer')]/ancestor::div[@id='prompt']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-15T22:18:48.692851" elapsed="0.109899"/>
+<arg>MonFichier10</arg>
+<arg>Contenu10</arg>
+<arg>Titre10</arg>
+<arg>Description10</arg>
+<status status="FAIL" start="2025-02-18T16:17:40.054591" elapsed="9.786449">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
 </kw>
 <kw name="Logout">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-15T22:18:49.805451" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-15T22:18:48.804645" elapsed="1.001646"/>
+<status status="NOT RUN" start="2025-02-18T16:17:49.844112" elapsed="0.000266"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-15T22:18:49.809163" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
-<msg time="2025-02-15T22:18:51.103082" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-15T22:18:51.103686" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-	GetHandleVerifier [0x00007FF684CB2EC5+28789]
-	(No symbol) [0x00007FF684C1F870]
-	(No symbol) [0x00007FF684AB8F9A]
-	(No symbol) [0x00007FF684B170C9]
-	(No symbol) [0x00007FF684B14A92]
-	(No symbol) [0x00007FF684B11B31]
-	(No symbol) [0x00007FF684B10A41]
-	(No symbol) [0x00007FF684B02234]
-	(No symbol) [0x00007FF684B3721A]
-	(No symbol) [0x00007FF684B01AE6]
-	(No symbol) [0x00007FF684B37430]
-	(No symbol) [0x00007FF684B5F6C3]
-	(No symbol) [0x00007FF684B36FF3]
-	(No symbol) [0x00007FF684AFFF0E]
-	(No symbol) [0x00007FF684B01193]
-	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
-	GetHandleVerifier [0x00007FF6850171A3+3584851]
-	GetHandleVerifier [0x00007FF68500C44D+3540477]
-	GetHandleVerifier [0x00007FF684D78B6A+838938]
-	(No symbol) [0x00007FF684C2A4EF]
-	(No symbol) [0x00007FF684C26954]
-	(No symbol) [0x00007FF684C26AF6]
-	(No symbol) [0x00007FF684C16499]
-	BaseThreadInitThunk [0x00007FFA4EF67374+20]
-	RtlUserThreadStart [0x00007FFA50E1CC91+33]
-</msg>
-<arg>${Connexion.link_Acceuil}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-02-15T22:18:49.807020" elapsed="1.305388">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-	GetHandleVerifier [0x00007FF684CB2EC5+28789]
-	(No symbol) [0x00007FF684C1F870]
-	(No symbol) [0x00007FF684AB8F9A]
-	(No symbol) [0x00007FF684B170C9]
-	(No symbol) [0x00007FF684B14A92]
-	(No symbol) [0x00007FF684B11B31]
-	(No symbol) [0x00007FF684B10A41]
-	(No symbol) [0x00007FF684B02234]
-	(No symbol) [0x00007FF684B3721A]
-	(No symbol) [0x00007FF684B01AE6]
-	(No symbol) [0x00007FF684B37430]
-	(No symbol) [0x00007FF684B5F6C3]
-	(No symbol) [0x00007FF684B36FF3]
-	(No symbol) [0x00007FF684AFFF0E]
-	(No symbol) [0x00007FF684B01193]
-	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
-	GetHandleVerifier [0x00007FF6850171A3+3584851]
-	GetHandleVerifier [0x00007FF68500C44D+3540477]
-	GetHandleVerifier [0x00007FF684D78B6A+838938]
-	(No symbol) [0x00007FF684C2A4EF]
-	(No symbol) [0x00007FF684C26954]
-	(No symbol) [0x00007FF684C26AF6]
-	(No symbol) [0x00007FF684C16499]
-	BaseThreadInitThunk [0x00007FFA4EF67374+20]
-	RtlUserThreadStart [0x00007FFA50E1CC91+33]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${Connexion.link_user}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-15T22:18:51.113173" elapsed="0.000249"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-15T22:18:51.113824" elapsed="0.000140"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${Connexion.link_deconnexion}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-15T22:18:51.114199" elapsed="0.001596"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-02-15T22:18:51.116568" elapsed="0.000188"/>
-</kw>
-<status status="FAIL" start="2025-02-15T22:18:48.803831" elapsed="2.313257">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-	GetHandleVerifier [0x00007FF684CB2EC5+28789]
-	(No symbol) [0x00007FF684C1F870]
-	(No symbol) [0x00007FF684AB8F9A]
-	(No symbol) [0x00007FF684B170C9]
-	(No symbol) [0x00007FF684B14A92]
-	(No symbol) [0x00007FF684B11B31]
-	(No symbol) [0x00007FF684B10A41]
-	(No symbol) [0x00007FF684B02234]
-	(No symbol) [0x00007FF684B3721A]
-	(No symbol) [0x00007FF684B01AE6]
-	(No symbol) [0x00007FF684B37430]
-	(No symbol) [0x00007FF684B5F6C3]
-	(No symbol) [0x00007FF684B36FF3]
-	(No symbol) [0x00007FF684AFFF0E]
-	(No symbol) [0x00007FF684B01193]
-	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
-	GetHandleVerifier [0x00007FF6850171A3+3584851]
-	GetHandleVerifier [0x00007FF68500C44D+3540477]
-	GetHandleVerifier [0x00007FF684D78B6A+838938]
-	(No symbol) [0x00007FF684C2A4EF]
-	(No symbol) [0x00007FF684C26954]
-	(No symbol) [0x00007FF684C26AF6]
-	(No symbol) [0x00007FF684C16499]
-	BaseThreadInitThunk [0x00007FFA4EF67374+20]
-	RtlUserThreadStart [0x00007FFA50E1CC91+33]
-</status>
-</kw>
-<status status="FAIL" start="2025-02-15T22:17:36.268511" elapsed="74.851258">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span data-dojo-attach-point="containerNode,textDirNode" id="HEADER_HOME_text" class="alf-menu-bar-label-node"&gt;...&lt;/span&gt; is not clickable at point (34, 13). Other element would receive the click: &lt;div class="mask" id="prompt_mask" style="z-index: 1015; height: 1364px; width: 1349px; display: block;"&gt;...&lt;/div&gt;
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-	GetHandleVerifier [0x00007FF684CB2EC5+28789]
-	(No symbol) [0x00007FF684C1F870]
-	(No symbol) [0x00007FF684AB8F9A]
-	(No symbol) [0x00007FF684B170C9]
-	(No symbol) [0x00007FF684B14A92]
-	(No symbol) [0x00007FF684B11B31]
-	(No symbol) [0x00007FF684B10A41]
-	(No symbol) [0x00007FF684B02234]
-	(No symbol) [0x00007FF684B3721A]
-	(No symbol) [0x00007FF684B01AE6]
-	(No symbol) [0x00007FF684B37430]
-	(No symbol) [0x00007FF684B5F6C3]
-	(No symbol) [0x00007FF684B36FF3]
-	(No symbol) [0x00007FF684AFFF0E]
-	(No symbol) [0x00007FF684B01193]
-	GetHandleVerifier [0x00007FF684FFD5FD+3479469]
-	GetHandleVerifier [0x00007FF6850171A3+3584851]
-	GetHandleVerifier [0x00007FF68500C44D+3540477]
-	GetHandleVerifier [0x00007FF684D78B6A+838938]
-	(No symbol) [0x00007FF684C2A4EF]
-	(No symbol) [0x00007FF684C26954]
-	(No symbol) [0x00007FF684C26AF6]
-	(No symbol) [0x00007FF684C16499]
-	BaseThreadInitThunk [0x00007FFA4EF67374+20]
-	RtlUserThreadStart [0x00007FFA50E1CC91+33]
-</status>
+<status status="FAIL" start="2025-02-18T16:17:32.266590" elapsed="17.578874">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-15T22:17:35.772422" elapsed="75.356023"/>
+<status status="FAIL" start="2025-02-18T16:17:31.432011" elapsed="18.416315"/>
 </suite>
 <statistics>
 <total>

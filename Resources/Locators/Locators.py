@@ -12,23 +12,27 @@ class CreerFichierHtml:
     link_creer = "//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']"
     link_fichierHtml = "//li[@id='yui-gen2']"
     input_name = "//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']"
-    # input_contenufichier = "//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']"
     input_titre = "//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']"
+    iframe_contenu = "//body[contains(@data-id, 'template_x002e_create-content_x002e_create-content')]/p"
     textarea_description = "//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']"
     btn_creer = "//button[@id='template_x002e_create-content_x002e_create-content_x0023_default-form-submit-button']"
 
+
+
 class SupprimerDossier:
     link_mesfichiers = "//span[@id='HEADER_MY_FILES_text']"
-    checkBox1_dossier = "//font[text()='"
-    checkBox2_dossier = "']/ancestor::tr/td//input[@type='checkbox']"
-    btn_articleSelectionnes = "//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-selectedItems-button-button']"
-    link_supprimer = "//li[@id='yui-gen12']/a/span/font/font"
-    btn_supprimer = "//button[@id='yui-gen196-button']"
+    divNomDossier1 = "//div[@class='yui-dt-liner']//a[text()='"
+    divNomDossier2 = "']"
+    linkPlus1 = "//a[text()='"
+    linkPlus2 = "']/ancestor::tr//a/span[text()='Plus...']"
+    link_supprimer1 = "//a[text()='"
+    link_supprimer2 = "']/ancestor::tr//span[text()='Supprimer le Dossier']"
+    btn_supprimer = "//button[contains(.,'Supprimer')]"
 
 
 class SupprimerSite:
 
-    link_sites = "//span[@id='HEADER_SITES_MENU_text']/font/font"
+    link_sites = "//span[@id='HEADER_SITES_MENU_text']"
     link_rechercheDeSite = "//td[@id='HEADER_SITES_MENU_SITE_FINDER_text']/a/font/font"
     btn_recherche = "//button[@id='template_x002e_site-finder_x002e_site-finder_x0023_default-button-button']/font/font"
     link_sitename1 = "//font[text()='"

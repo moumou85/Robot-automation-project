@@ -26,73 +26,72 @@ Login
     Element Should Contain    ${Connexion.link_user}    ${vMessageConnexion}
 
 Logout
-    Sleep    1s
-    Click Element    ${Connexion.link_Acceuil}
+    # Wait Until Element Is Visible    ${Connexion.link_Acceuil}
+    # Click Element    ${Connexion.link_Acceuil}
+    Wait Until Element Is Visible    ${Connexion.link_user}
     Click Element    ${Connexion.link_user}
-    Sleep    1s
+    Wait Until Element Is Visible    ${Connexion.link_deconnexion}
     Click Element    ${Connexion.link_deconnexion}
     Close Browser
     
 Creer un fichier Html
-    [Arguments]    ${vnomFichier}    ${vtitre}    ${vdescription}
+    [Arguments]    ${vnomFichier}    ${vcontenu}    ${vtitre}    ${vdescription}
     Click Element    ${CreerFichierHtml.link_mesfichiers}
+    Wait Until Element Is Visible    ${CreerFichierHtml.link_creer}
     Click Element    ${CreerFichierHtml.link_creer}
     Click Element    ${CreerFichierHtml.link_fichierHtml}
     Input Text    ${CreerFichierHtml.input_name}    ${vnomFichier}
-    # Input Text    ${CreerFichierHtml.input_contenufichier}    ${vcontenu}
+
+    
+    
     Input Text    ${CreerFichierHtml.input_titre}    ${vtitre}
     Input Text    ${CreerFichierHtml.textarea_description}    ${vdescription}
+
+    Wait Until Element Is Visible    //div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
+    Select Frame    //div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
+    Input Text    //body[@id="tinymce"]/p     ${vcontenu}
+    Unselect Frame
+
     Click Element    ${CreerFichierHtml.btn_creer}
-    
 
 
-Supprimer un dossier
+Supprimer Un Dossier
+
     [Arguments]    ${nomDossier}    
     Click Element    ${SupprimerDossier.link_mesfichiers}
-    # Checkbox Should Be Selected    
-    Sleep    2s
-    # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
-    Mouse Over    //font[@id="yui-gen136"]
-    Sleep    1s
-    Click Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'More...')]
-    Clear Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'Delete Folder')]
-    # Click Element    ${SupprimerDossier.btn_articleSelectionnes}
-    # Click Element    ${SupprimerDossier.link_supprimer}
-    # Click Element    ${SupprimerDossier.btn_supprimer}
-    Click Element    //button[contains(.,'Delete')]/ancestor::div[@id='prompt']
+    # Sleep    1s
+    Mouse Over    ${SupprimerDossier.divNomDossier1}${nomDossier}${SupprimerDossier.divNomDossier2}
+    # Sleep    1s
+    Click Element    ${SupprimerDossier.linkPlus1}${nomDossier}${SupprimerDossier.linkPlus2}
+    # Sleep    1s
+    Click Element    ${SupprimerDossier.link_supprimer1}${nomDossier}${SupprimerDossier.link_supprimer2}
+    # Sleep    1s
+    Click Element    ${SupprimerDossier.btn_supprimer}
     
+
+
+Supprimer Definitivement Un Site
+    [Arguments]    ${nomSite}
+    Go To    url=${vURL}/share/page/site/${nomSite}/dashboard
+
+
+
 
 *** Test Cases ***
 
-Se connecter
+CT1
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    # Creer un fichier Html    MonFichier4    Titre4    Description4  
-    Supprimer un dossier    Dossier2  
+    Creer un fichier Html    MonFichier10    Contenu10    Titre10    Description10  
+    # Supprimer un dossier    Dossier2  
     Logout
    
 
-Supprimer un dossier
+CT2
        
     Login    ${vURL}    ${vLogin}    ${vPassword}
-
-    Click Element    ${SupprimerDossier.link_mesfichiers}
-    # Checkbox Should Be Selected    
-    
-    # click Element    ${SupprimerDossier.checkBox1_dossier}${nomDossier}${SupprimerDossier.checkBox2_dossier}
-    Mouse Over    //a[text()='Dossier2']
-    
-    # Click Element    //a[contains(.,'Dossier1')]/ancestor::tr//a[contains(.,'More...')]
-    Click Element    //a[text()='Dossier2']/ancestor::tr//a/span[text()='Plus...']
-    Sleep    2s
-
-    Click Element    //a[text()='Dossier2']/ancestor::tr//span[text()='Supprimer le Dossier']
-    # Click Element    ${SupprimerDossier.btn_articleSelectionnes}
-    # Click Element    ${SupprimerDossier.link_supprimer}
-    # Click Element    ${SupprimerDossier.btn_supprimer}
-
-    Sleep    60s
-    Click Element    //button[contains(.,'Supprimer')]/ancestor::div[@id='prompt']
-
+    # Supprimer Definitivement Un Site    MohamedSite1
+    # Creer un fichier Html    test23    test2345    Description23
+    Supprimer Un Dossier    test22
     Logout
 
 
