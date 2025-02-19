@@ -26,8 +26,8 @@ Login
     Element Should Contain    ${Connexion.link_user}    ${vMessageConnexion}
 
 Logout
-    # Wait Until Element Is Visible    ${Connexion.link_Acceuil}
-    # Click Element    ${Connexion.link_Acceuil}
+    Wait Until Element Is Visible    ${Connexion.link_Acceuil}
+    Click Element    ${Connexion.link_Acceuil}
     Wait Until Element Is Visible    ${Connexion.link_user}
     Click Element    ${Connexion.link_user}
     Wait Until Element Is Visible    ${Connexion.link_deconnexion}
@@ -41,16 +41,16 @@ Creer un fichier Html
     Click Element    ${CreerFichierHtml.link_creer}
     Click Element    ${CreerFichierHtml.link_fichierHtml}
     Input Text    ${CreerFichierHtml.input_name}    ${vnomFichier}
-
-    
-    
+    Sleep    2s
+    Execute Javascript    tinyMCE.activeEditor.setContent('${vcontenu}')
+    # Wait Until Element Is Visible    //iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
+    # Select Frame    //iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
+    # Input Text    //body[@id="tinymce"]/p     ${vcontenu}
+    # Unselect Frame
     Input Text    ${CreerFichierHtml.input_titre}    ${vtitre}
     Input Text    ${CreerFichierHtml.textarea_description}    ${vdescription}
 
-    Wait Until Element Is Visible    //div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
-    Select Frame    //div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']
-    Input Text    //body[@id="tinymce"]/p     ${vcontenu}
-    Unselect Frame
+    
 
     Click Element    ${CreerFichierHtml.btn_creer}
 
@@ -73,7 +73,17 @@ Supprimer Un Dossier
 Supprimer Definitivement Un Site
     [Arguments]    ${nomSite}
     Go To    url=${vURL}/share/page/site/${nomSite}/dashboard
-
+    Wait Until Element Is Visible    ${SupprimerSite.img_configuration}
+    Click Element    ${SupprimerSite.img_configuration}
+    Click Element    ${SupprimerSite.link_supprimerSite}
+    Click Element    ${SupprimerSite.btn_okSupprimer}
+    Click Element    ${Connexion.link_user}
+    Click Element    ${SupprimerSite.link_monProfile}
+    Wait Until Element Is Visible    ${SupprimerSite.link_corbeille}
+    Click Element    ${SupprimerSite.link_corbeille}
+    Wait Until Element Is Visible    ${SupprimerSite.btn_supprimerCorbeille1}${nomSite}${SupprimerSite.btn_supprimerCorbeille2}
+    Click Element    ${SupprimerSite.btn_supprimerCorbeille1}${nomSite}${SupprimerSite.btn_supprimerCorbeille2}
+    Click Element    ${SupprimerSite.btn_okConfirmation}
 
 
 
@@ -81,7 +91,7 @@ Supprimer Definitivement Un Site
 
 CT1
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Creer un fichier Html    MonFichier10    Contenu10    Titre10    Description10  
+    # Creer un fichier Html    MonFichier14    Contenu14    Titre14    Description14  
     # Supprimer un dossier    Dossier2  
     Logout
    
@@ -89,9 +99,9 @@ CT1
 CT2
        
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    # Supprimer Definitivement Un Site    MohamedSite1
+    Supprimer Definitivement Un Site    mohamed2
     # Creer un fichier Html    test23    test2345    Description23
-    Supprimer Un Dossier    test22
+    # Supprimer Un Dossier    test22
     Logout
 
 

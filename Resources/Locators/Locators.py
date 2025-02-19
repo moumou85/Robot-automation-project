@@ -10,7 +10,7 @@ class Connexion:
 class CreerFichierHtml:
     link_mesfichiers = "//span[@id='HEADER_MY_FILES_text']"
     link_creer = "//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']"
-    link_fichierHtml = "//li[@id='yui-gen2']"
+    link_fichierHtml = "//span[text()='HTML...']"
     input_name = "//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']"
     input_titre = "//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']"
     iframe_contenu = "//body[contains(@data-id, 'template_x002e_create-content_x002e_create-content')]/p"
@@ -31,13 +31,17 @@ class SupprimerDossier:
 
 
 class SupprimerSite:
+    img_configuration = "//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']"
+    link_supprimerSite = "//td[@id='HEADER_DELETE_SITE_text']"
+    btn_okSupprimer = "//span[@id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']"
+    link_monProfile = "//td[@id='HEADER_USER_MENU_PROFILE_text']"
+    link_corbeille = "//a[text()='Corbeille']"
+    btn_supprimerCorbeille1 = "//div[text()='"
+    btn_supprimerCorbeille2 = "']/ancestor::tr//button[text()='Supprimer']"
+    btn_okConfirmation = "//button[text()='OK']"
 
-    link_sites = "//span[@id='HEADER_SITES_MENU_text']"
-    link_rechercheDeSite = "//td[@id='HEADER_SITES_MENU_SITE_FINDER_text']/a/font/font"
-    btn_recherche = "//button[@id='template_x002e_site-finder_x002e_site-finder_x0023_default-button-button']/font/font"
-    link_sitename1 = "//font[text()='"
-    link_sitename2 = "']/ancestor::h3[@class='sitename']"
-    img_configuration = "//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']/img"
-    link_supprimerSite = "//td[@id='HEADER_DELETE_SITE_text']/font/font"
-    btn_daccord = "//span[@id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']"
+
+
+
+
     

@@ -1,151 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-18T16:17:31.419778" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-18T23:31:34.094352" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
-<test id="s1-t1" name="CT1" line="82">
+<test id="s1-t1" name="CT2" line="99">
 <kw name="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:32.270435" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-02-18T23:31:34.704688" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T16:17:32.269804" elapsed="3.915802"/>
+<status status="PASS" start="2025-02-18T23:31:34.703697" elapsed="3.572676"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-18T16:17:36.186457" elapsed="0.098506"/>
+<status status="PASS" start="2025-02-18T23:31:38.276994" elapsed="0.056879"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:36.286885" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-02-18T23:31:38.337300" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:36.285468" elapsed="0.188764"/>
+<status status="PASS" start="2025-02-18T23:31:38.334400" elapsed="0.160506"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:36.479806" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-02-18T23:31:38.496715" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:36.477537" elapsed="0.119908"/>
+<status status="PASS" start="2025-02-18T23:31:38.495414" elapsed="0.146179"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:36.598801" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-02-18T23:31:38.642654" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:36.597960" elapsed="1.404586"/>
+<status status="PASS" start="2025-02-18T23:31:38.641913" elapsed="1.338406"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T16:17:40.004125" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-18T23:31:41.984024" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T16:17:38.003067" elapsed="2.001362"/>
+<status status="PASS" start="2025-02-18T23:31:39.982140" elapsed="2.002962"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:40.049807" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-02-18T23:31:42.059234" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-18T16:17:40.004677" elapsed="0.045602"/>
+<status status="PASS" start="2025-02-18T23:31:41.987271" elapsed="0.072406"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-18T16:17:32.267987" elapsed="7.782748"/>
+<status status="PASS" start="2025-02-18T23:31:34.697425" elapsed="7.362656"/>
 </kw>
-<kw name="Creer un fichier Html">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:40.058148" level="INFO">Clicking element '//span[@id='HEADER_MY_FILES_text']'.</msg>
-<arg>${CreerFichierHtml.link_mesfichiers}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:40.055697" elapsed="3.161745"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerFichierHtml.link_creer}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T16:17:43.217807" elapsed="0.271526"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:43.493325" level="INFO">Clicking element '//button[@id='template_x002e_documentlist_v2_x002e_myfiles_x0023_default-createContent-button-button']'.</msg>
-<arg>${CreerFichierHtml.link_creer}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:43.491024" elapsed="0.122464"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:43.615038" level="INFO">Clicking element '//li[@id='yui-gen2']'.</msg>
-<arg>${CreerFichierHtml.link_fichierHtml}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:43.613979" elapsed="0.553651"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:44.169613" level="INFO">Typing text 'MonFichier10' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_name']'.</msg>
-<arg>${CreerFichierHtml.input_name}</arg>
-<arg>${vnomFichier}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:44.168103" elapsed="0.195137"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:44.366452" level="INFO">Typing text 'Titre10' into text field '//input[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_title']'.</msg>
-<arg>${CreerFichierHtml.input_titre}</arg>
-<arg>${vtitre}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:44.365127" elapsed="0.184688"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:44.551911" level="INFO">Typing text 'Description10' into text field '//textarea[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_description']'.</msg>
-<arg>${CreerFichierHtml.textarea_description}</arg>
-<arg>${vdescription}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T16:17:44.550315" elapsed="0.159598"/>
+<kw name="Supprimer Definitivement Un Site">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:42.063312" level="INFO">Opening url 'http://34.71.49.164/share/page/site/mohamed2/dashboard'</msg>
+<arg>url=${vURL}/share/page/site/${nomSite}/dashboard</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-18T23:31:42.062506" elapsed="1.478892"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-02-18T16:17:49.830856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-18T16:17:49.831292" level="FAIL">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</msg>
-<arg>//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']</arg>
+<arg>${SupprimerSite.img_configuration}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-02-18T16:17:44.710355" elapsed="5.125919">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
-</kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<arg>//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" start="2025-02-18T16:17:49.836977" elapsed="0.000335"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//body[@id="tinymce"]/p</arg>
-<arg>${vcontenu}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-18T16:17:49.837731" elapsed="0.000248"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" start="2025-02-18T16:17:49.838352" elapsed="0.000201"/>
+<status status="PASS" start="2025-02-18T23:31:43.541861" elapsed="0.045860"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>${CreerFichierHtml.btn_creer}</arg>
+<msg time="2025-02-18T23:31:43.588669" level="INFO">Clicking element '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']'.</msg>
+<arg>${SupprimerSite.img_configuration}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-18T16:17:49.839966" elapsed="0.000309"/>
+<status status="PASS" start="2025-02-18T23:31:43.588051" elapsed="0.099385"/>
 </kw>
-<arg>MonFichier10</arg>
-<arg>Contenu10</arg>
-<arg>Titre10</arg>
-<arg>Description10</arg>
-<status status="FAIL" start="2025-02-18T16:17:40.054591" elapsed="9.786449">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:43.689194" level="INFO">Clicking element '//td[@id='HEADER_DELETE_SITE_text']'.</msg>
+<arg>${SupprimerSite.link_supprimerSite}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:43.687988" elapsed="0.119868"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:43.809833" level="INFO">Clicking element '//span[@id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']'.</msg>
+<arg>${SupprimerSite.btn_okSupprimer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:43.808331" elapsed="0.107509"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:43.917728" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
+<arg>${Connexion.link_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:43.916377" elapsed="0.086944"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:44.005212" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_PROFILE_text']'.</msg>
+<arg>${SupprimerSite.link_monProfile}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:44.003725" elapsed="0.670019"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SupprimerSite.link_corbeille}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T23:31:44.674103" elapsed="0.036119"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:44.711318" level="INFO">Clicking element '//a[text()='Corbeille']'.</msg>
+<arg>${SupprimerSite.link_corbeille}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:44.710539" elapsed="0.539942"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SupprimerSite.btn_supprimerCorbeille1}${nomSite}${SupprimerSite.btn_supprimerCorbeille2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T23:31:45.251071" elapsed="0.052869"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:45.305565" level="INFO">Clicking element '//div[text()='mohamed2']/ancestor::tr//button[text()='Supprimer']'.</msg>
+<arg>${SupprimerSite.btn_supprimerCorbeille1}${nomSite}${SupprimerSite.btn_supprimerCorbeille2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:45.304339" elapsed="0.104838"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:45.410810" level="INFO">Clicking element '//button[text()='OK']'.</msg>
+<arg>${SupprimerSite.btn_okConfirmation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:45.409579" elapsed="0.107791"/>
+</kw>
+<arg>mohamed2</arg>
+<status status="PASS" start="2025-02-18T23:31:42.061534" elapsed="3.456304"/>
 </kw>
 <kw name="Logout">
-<status status="NOT RUN" start="2025-02-18T16:17:49.844112" elapsed="0.000266"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_Acceuil}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T23:31:45.519850" elapsed="0.069206"/>
 </kw>
-<status status="FAIL" start="2025-02-18T16:17:32.266590" elapsed="17.578874">Element '//div[@id="template_x002e_create-content_x002e_create-content_x0023_default-form-fields"]//iframe[@id='template_x002e_create-content_x002e_create-content_x0023_default_prop_cm_content_ifr']' not visible after 5 seconds.</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:45.590734" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
+<arg>${Connexion.link_Acceuil}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:45.589506" elapsed="0.495327"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T23:31:46.085296" elapsed="0.021813"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:46.108670" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
+<arg>${Connexion.link_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:46.107639" elapsed="0.087963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_deconnexion}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T23:31:46.195972" elapsed="0.027496"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T23:31:46.224496" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
+<arg>${Connexion.link_deconnexion}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T23:31:46.223855" elapsed="0.091091"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T23:31:46.315486" elapsed="2.677430"/>
+</kw>
+<status status="PASS" start="2025-02-18T23:31:45.518719" elapsed="3.474935"/>
+</kw>
+<status status="PASS" start="2025-02-18T23:31:34.696195" elapsed="14.299726"/>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-18T16:17:31.432011" elapsed="18.416315"/>
+<status status="PASS" start="2025-02-18T23:31:34.103778" elapsed="14.903440"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Keywords">Keywords</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keywords">Keywords</stat>
 </suite>
 </statistics>
 <errors>
