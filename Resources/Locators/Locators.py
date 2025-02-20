@@ -40,8 +40,33 @@ class SupprimerSite:
     btn_supprimerCorbeille2 = "']/ancestor::tr//button[text()='Supprimer']"
     btn_okConfirmation = "//button[text()='OK']"
 
+class CreerEvenement:
+    link_calendrier = "//span[@id='HEADER_SITE_CALENDAR_text']"
+    btn_ajouterEvenement = "//button[@id='template_x002e_toolbar_x002e_calendar_x0023_default-addEvent-button-button']"
+    input_nomEvenement = "//input[@id='eventEditPanel-title']"
+    input_emplacement = "//input[@id='eventEditPanel-location']"
+    textarea_description = "//textarea[@id='eventEditPanel-description']"
+    input_checkbox = "//input[@id='eventEditPanel-allday']"
+    input_dateDevut = "//input[@id='fd']"
+    a_jourDumoisDebut1 = "//a[text()='"
+    a_jourDumoisDebut2 = "']"
 
 
+    input_dateFin = "//input[@id='td']"
+    input_heureDebut = "//input[@id='eventEditPanel-start']"
+    input_heureFin = "//input[@id='eventEditPanel-end']"
+    input_tag  = "//input[@id='eventEditPanel-tag-input-field']"
+    btn_enregistrer = "//button[@id='eventEditPanel-ok-button']"
 
+class CreerListeDonnees:
+    link_plus = "//span[@id='HEADER_SITE_MORE_PAGES_text']"
+    link_listeDonnees = "//span[@id='HEADER_SITE_DATA-LISTS_text']/a[text()='Listes de données']"
+    div_typeListe1 = "//a[contains(text(), "
+    div_typeListe2 = ")]"
+    input_title = "//input[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList_prop_cm_title']"
+    textarea_description = "//textarea[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList_prop_cm_description']"
+    btn_enregistrer = "//span[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList-form-submit']"
+    div_succeedmessage1 ="//div[@id='template_x002e_datalists_x002e_data-lists_x0023_default-lists']/ul/li/a[text()='"
+    div_succeedmessage2 = "']"
 
     
