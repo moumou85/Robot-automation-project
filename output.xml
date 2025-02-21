@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-20T20:06:43.939558" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-20T20:11:41.886764" rpa="false" schemaversion="5">
 <suite id="s1" name="Supprimer Un Site" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot">
 <test id="s1-t1" name="Supprimer Un Site" line="20">
 <kw name="Login">
-<msg time="2025-02-20T20:06:44.407668" level="FAIL">No keyword with name 'Login' found. Did you mean:
+<msg time="2025-02-20T20:11:42.363702" level="FAIL">No keyword with name 'Login' found. Did you mean:
     BuiltIn.Log
     BuiltIn.Log Many</msg>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="FAIL" start="2025-02-20T20:06:44.407414" elapsed="0.002410">No keyword with name 'Login' found. Did you mean:
+<status status="FAIL" start="2025-02-20T20:11:42.363406" elapsed="0.003383">No keyword with name 'Login' found. Did you mean:
     BuiltIn.Log
     BuiltIn.Log Many</status>
 </kw>
-<kw name="Supprimer Un Site">
+<kw name="Supprimer Site">
 <arg>test2</arg>
-<status status="NOT RUN" start="2025-02-20T20:06:44.411486" elapsed="0.000326"/>
+<status status="NOT RUN" start="2025-02-20T20:11:42.370377" elapsed="0.000353"/>
 </kw>
 <kw name="Logout">
-<status status="NOT RUN" start="2025-02-20T20:06:44.413037" elapsed="0.000250"/>
+<status status="NOT RUN" start="2025-02-20T20:11:42.371734" elapsed="0.000260"/>
 </kw>
-<status status="FAIL" start="2025-02-20T20:06:44.404648" elapsed="0.010248">No keyword with name 'Login' found. Did you mean:
+<status status="FAIL" start="2025-02-20T20:11:42.359101" elapsed="0.014118">No keyword with name 'Login' found. Did you mean:
     BuiltIn.Log
     BuiltIn.Log Many</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-20T20:06:43.954313" elapsed="0.479625"/>
+<status status="FAIL" start="2025-02-20T20:11:41.897273" elapsed="0.479892"/>
 </suite>
 <statistics>
 <total>
@@ -38,6 +38,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-20T20:06:44.398202" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot' on line 7: Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot' on line 160: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-02-20T20:11:42.349821" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot' on line 7: Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot' on line 160: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>

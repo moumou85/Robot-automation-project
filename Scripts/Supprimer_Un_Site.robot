@@ -20,5 +20,5 @@ ${vMessageConnexion}    Idbourkha Mohamed
 Supprimer Un Site
 
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Supprimer Un Site    test2
+    Supprimer Site    test2
     Logout

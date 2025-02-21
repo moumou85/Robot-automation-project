@@ -143,7 +143,7 @@ Creer Une Liste De Donnees
     Wait Until Element Is Visible    ${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}
     Element Should Contain    ${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}    ${titleListe}
 
-Supprimer Un Site
+Supprimer Site
     # SITE_NAME contient le nom du site à supprimer
     # vURL_MySite1 premiére partie de l'url qui redirige vers le site
     # vURL_MySite2 deuxiéme partie de l'url qui redirige vers le site
