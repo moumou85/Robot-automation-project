@@ -174,7 +174,7 @@ CT2
     # Supprimer Definitivement Un Site    mohamed2
     # Creer un fichier Html    test23    test2345    Description23
     # Supprimer Un Dossier    test22
-    Supprimer Un Site    test1
+    Supprimer Site    test1
     Logout
 
 

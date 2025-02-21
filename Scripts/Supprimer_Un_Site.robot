@@ -4,7 +4,9 @@ Documentation    Fichier Contenant les mots cles de l'ensemble du projet alfresc
 Library    SeleniumLibrary
 Library    XML
 Variables    ../Resources/Locators/Locators.py
+Variables    ../Resources/Keywords/Keywords.robot
 Resource    ../Resources/Keywords/Keywords.robot
+
 
 *** Variables ***
 
@@ -13,6 +15,8 @@ ${vLogin}    2106860
 ${vPassword}    2106860
 ${vBrowser}    chrome
 ${vMessageConnexion}    Idbourkha Mohamed
+
+
 
 
 *** Test Cases ***
