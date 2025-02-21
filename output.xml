@@ -1,200 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-20T18:05:00.654209" rpa="false" schemaversion="5">
-<suite id="s1" name="Keywords" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot">
-<test id="s1-t1" name="CT1" line="149">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-20T20:06:43.939558" rpa="false" schemaversion="5">
+<suite id="s1" name="Supprimer Un Site" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot">
+<test id="s1-t1" name="Supprimer Un Site" line="20">
 <kw name="Login">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:01.254364" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
-<arg>${vURL}</arg>
-<arg>${vBrowser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-20T18:05:01.253936" elapsed="4.453954"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-20T18:05:05.708312" elapsed="0.074386"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:05.785732" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
-<arg>${Connexion.input_username}</arg>
-<arg>${vLogin}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:05.783248" elapsed="0.156742"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:05.941342" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
-<arg>${Connexion.input_password}</arg>
-<arg>${vPassword}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:05.940350" elapsed="0.140975"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:06.082988" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
-<arg>${Connexion.btn_connexion}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:06.081762" elapsed="2.737784"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Connexion.link_user}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:08.820025" elapsed="0.149845"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:09.021570" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
-<arg>${Connexion.link_user}</arg>
-<arg>${vMessageConnexion}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-20T18:05:08.970319" elapsed="0.051906"/>
-</kw>
+<msg time="2025-02-20T20:06:44.407668" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-20T18:05:01.252122" elapsed="7.770687"/>
+<status status="FAIL" start="2025-02-20T20:06:44.407414" elapsed="0.002410">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
 </kw>
-<kw name="Creer Une Liste De Donnees">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:09.030359" level="INFO">Opening url 'http://34.71.49.164/share/page/site/notresite/dashboard'</msg>
-<arg>url=${vURL}/share/page/site/${nomSite}/dashboard</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-02-20T18:05:09.028751" elapsed="0.987403"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.link_plus}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:10.016743" elapsed="0.036682"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:10.054407" level="INFO">Clicking element '//span[@id='HEADER_SITE_MORE_PAGES_text']'.</msg>
-<arg>${CreerListeDonnees.link_plus}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:10.053745" elapsed="0.127965"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.link_listeDonnees}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:10.182384" elapsed="0.034773"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:10.218276" level="INFO">Clicking element '//span[@id='HEADER_SITE_DATA-LISTS_text']/a[text()='Listes de données']'.</msg>
-<arg>${CreerListeDonnees.link_listeDonnees}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:10.217447" elapsed="0.789501"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.div_typeListe1}${typeListe}${CreerListeDonnees.div_typeListe2}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.007527" elapsed="0.069447"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:11.079043" level="INFO">Clicking element '//a[contains(text(), "Carnet d'adresses")]'.</msg>
-<arg>${CreerListeDonnees.div_typeListe1}${typeListe}${CreerListeDonnees.div_typeListe2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.077498" elapsed="0.104217"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.input_title}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.182032" elapsed="0.031192"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:11.214814" level="INFO">Typing text 'Liste1' into text field '//input[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList_prop_cm_title']'.</msg>
-<arg>${CreerListeDonnees.input_title}</arg>
-<arg>${titleListe}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.213666" elapsed="0.142399"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.textarea_description}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.356406" elapsed="0.025457"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:11.383036" level="INFO">Typing text 'descriptionListe1' into text field '//textarea[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList_prop_cm_description']'.</msg>
-<arg>${CreerListeDonnees.textarea_description}</arg>
-<arg>${descriptionListe}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.382149" elapsed="0.155022"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:11.538625" level="INFO">Clicking element '//span[@id='template_x002e_datalists_x002e_data-lists_x0023_default-newList-form-submit']'.</msg>
-<arg>${CreerListeDonnees.btn_enregistrer}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.537616" elapsed="0.125219"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.663293" elapsed="0.292245"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:12.035918" level="INFO">Element '//div[@id='template_x002e_datalists_x002e_data-lists_x0023_default-lists']/ul/li/a[text()='Liste1']' contains text 'Liste1'.</msg>
-<arg>${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}</arg>
-<arg>${titleListe}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-20T18:05:11.956661" elapsed="0.079885"/>
-</kw>
-<arg>notresite</arg>
-<arg>"Carnet d'adresses"</arg>
-<arg>Liste1</arg>
-<arg>descriptionListe1</arg>
-<status status="PASS" start="2025-02-20T18:05:09.026799" elapsed="3.010490"/>
+<kw name="Supprimer Un Site">
+<arg>test2</arg>
+<status status="NOT RUN" start="2025-02-20T20:06:44.411486" elapsed="0.000326"/>
 </kw>
 <kw name="Logout">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Connexion.link_Acceuil}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.043041" elapsed="0.052802"/>
+<status status="NOT RUN" start="2025-02-20T20:06:44.413037" elapsed="0.000250"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:12.097537" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
-<arg>${Connexion.link_Acceuil}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.096262" elapsed="0.443978"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Connexion.link_user}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.540778" elapsed="0.033210"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:12.577723" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
-<arg>${Connexion.link_user}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.576179" elapsed="0.107730"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Connexion.link_deconnexion}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.684245" elapsed="0.037902"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T18:05:12.723232" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
-<arg>${Connexion.link_deconnexion}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.722433" elapsed="0.113522"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-20T18:05:12.836571" elapsed="2.545520"/>
-</kw>
-<status status="PASS" start="2025-02-20T18:05:12.039717" elapsed="3.344399"/>
-</kw>
-<status status="PASS" start="2025-02-20T18:05:01.250859" elapsed="14.145601"/>
+<status status="FAIL" start="2025-02-20T20:06:44.404648" elapsed="0.010248">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="PASS" start="2025-02-20T18:05:00.664480" elapsed="14.752739"/>
+<status status="FAIL" start="2025-02-20T20:06:43.954313" elapsed="0.479625"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Keywords">Keywords</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Supprimer Un Site">Supprimer Un Site</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-20T18:05:00.599672" level="WARN">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot' on line 117: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-02-20T20:06:44.398202" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot' on line 7: Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot' on line 160: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>

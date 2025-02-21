@@ -69,4 +69,14 @@ class CreerListeDonnees:
     div_succeedmessage1 ="//div[@id='template_x002e_datalists_x002e_data-lists_x0023_default-lists']/ul/li/a[text()='"
     div_succeedmessage2 = "']"
 
+
+# Localisateurs pour 
+
+class SupprimerSite:
+
+    link_Site = "//span[@id='HEADER_SITES_MENU_text']"
+    btn_Roue_Dentee = "//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']"
+    link_delete = "//td[@class='dijitReset dijitMenuItemLabel' and @id='HEADER_DELETE_SITE_text']"
+    lbl_delete= "//div[@class='dialog-body']"
+    btn_Ok = "//span[@class='dijitReset dijitInline dijitButtonText' and @id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']"
     

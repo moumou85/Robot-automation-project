@@ -143,6 +143,19 @@ Creer Une Liste De Donnees
     Wait Until Element Is Visible    ${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}
     Element Should Contain    ${CreerListeDonnees.div_succeedmessage1}${titleListe}${CreerListeDonnees.div_succeedmessage2}    ${titleListe}
 
+Supprimer Un Site
+    # SITE_NAME contient le nom du site à supprimer
+    # vURL_MySite1 premiére partie de l'url qui redirige vers le site
+    # vURL_MySite2 deuxiéme partie de l'url qui redirige vers le site
+    [Arguments]    ${vSITE_NAME}    
+    Go To    ${vURL}/share/page/site/${vSITE_NAME}/dashboard 
+    Sleep    2s   
+    Click Element    ${SupprimerSite.btn_Roue_Dentee}
+    Click Element    ${SupprimerSite.link_delete}
+    Wait Until Element Is Visible    ${SupprimerSite.lbl_delete}    timeout=5s
+    Click Element    ${SupprimerSite.btn_Ok}
+    Sleep    2s
+
 
 *** Test Cases ***
 
@@ -158,9 +171,10 @@ CT1
 CT2
        
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Supprimer Definitivement Un Site    mohamed2
+    # Supprimer Definitivement Un Site    mohamed2
     # Creer un fichier Html    test23    test2345    Description23
     # Supprimer Un Dossier    test22
+    Supprimer Un Site    test1
     Logout
 
 
