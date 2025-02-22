@@ -17,12 +17,24 @@ ${vBrowser}    chrome
 ${vMessageConnexion}    Idbourkha Mohamed
 
 
+*** Keywords ***
+
+Login 
+    [Arguments]    ${vURL}    ${vLogin}    ${vPassword}
+    Open Browser    ${vURL}    ${vBrowser}
+    Maximize Browser Window
+    Input Text    ${Connexion.input_username}    ${vLogin}
+    Input Text    ${Connexion.input_password}    ${vPassword}
+    Click Element    ${Connexion.btn_connexion}
+    Wait Until Element Is Visible    ${Connexion.link_user}
+    Element Should Contain    ${Connexion.link_user}    ${vMessageConnexion}
+
 
 
 *** Test Cases ***
 
 Supprimer Un Site
-
+    
     Login    ${vURL}    ${vLogin}    ${vPassword}
     Supprimer Site    test2
     Logout

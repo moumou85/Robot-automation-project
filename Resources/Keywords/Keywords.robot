@@ -110,11 +110,11 @@ Creer Un Evenement Dans Un Site
     Element Should Contain    ${CreerEvenement.link_evenementCree}    ${nomEvenement}
 
 
-Replace Value In XPATH
-    [Arguments]        ${xpath}          ${name}=\
-    [Documentation]    Remplace '__1__' par ``name`` dans ``xpath``
-    ${loc}=            Replace String    ${xpath}                   __1__                      ${name}
-    [Return]           ${loc}
+# Replace Value In XPATH
+#     [Arguments]        ${xpath}          ${name}=\
+#     [Documentation]    Remplace '__1__' par ``name`` dans ``xpath``
+#     ${loc}=            Replace String    ${xpath}                   __1__                      ${name}
+#     [Return]           ${loc}
 
 
 Creer Une Liste De Donnees
