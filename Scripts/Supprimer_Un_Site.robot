@@ -4,9 +4,7 @@ Documentation    Fichier Contenant les mots cles de l'ensemble du projet alfresc
 Library    SeleniumLibrary
 Library    XML
 Variables    ../Resources/Locators/Locators.py
-Variables    ../Resources/Keywords/Keywords.robot
 Resource    ../Resources/Keywords/Keywords.robot
-
 
 *** Variables ***
 
@@ -33,8 +31,7 @@ Login
 
 *** Test Cases ***
 
-Supprimer Un Site
-    
+CT1    
     Login    ${vURL}    ${vLogin}    ${vPassword}
     Supprimer Site    test2
     Logout

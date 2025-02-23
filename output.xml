@@ -1,68 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-22T13:34:28.473530" rpa="false" schemaversion="5">
-<suite id="s1" name="Supprimer Un Site" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot">
-<test id="s1-t1" name="Supprimer Un Site" line="36">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-22T21:26:56.980950" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot">
+<test id="s1-t1" name="CT1" line="20">
 <kw name="Login">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-22T13:34:28.951658" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
-<arg>${vURL}</arg>
-<arg>${vBrowser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-22T13:34:28.951150" elapsed="3.426863"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-22T13:34:32.379867" elapsed="1.049219"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-22T13:34:33.434921" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
-<arg>${Connexion.input_username}</arg>
-<arg>${vLogin}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-22T13:34:33.431961" elapsed="0.240447"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-22T13:34:33.673807" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
-<arg>${Connexion.input_password}</arg>
-<arg>${vPassword}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-22T13:34:33.673036" elapsed="0.136353"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-22T13:34:33.811444" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
-<arg>${Connexion.btn_connexion}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-22T13:34:33.809956" elapsed="1.542181"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Connexion.link_user}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-22T13:34:35.352694" elapsed="0.041299"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-02-22T13:34:35.428917" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
-<arg>${Connexion.link_user}</arg>
-<arg>${vMessageConnexion}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-02-22T13:34:35.394319" elapsed="0.034882"/>
-</kw>
+<msg time="2025-02-22T21:26:57.472229" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-02-22T13:34:28.949313" elapsed="6.480091"/>
+<status status="FAIL" start="2025-02-22T21:26:57.471937" elapsed="0.002391">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
 </kw>
 <kw name="Supprimer Site">
-<msg time="2025-02-22T13:34:35.438100" level="FAIL">No keyword with name 'Supprimer Site' found.</msg>
 <arg>test2</arg>
-<status status="FAIL" start="2025-02-22T13:34:35.437718" elapsed="0.001784">No keyword with name 'Supprimer Site' found.</status>
+<status status="NOT RUN" start="2025-02-22T21:26:57.476912" elapsed="0.000377"/>
 </kw>
 <kw name="Logout">
-<status status="NOT RUN" start="2025-02-22T13:34:35.442988" elapsed="0.000294"/>
+<status status="NOT RUN" start="2025-02-22T21:26:57.481062" elapsed="0.000370"/>
 </kw>
-<status status="FAIL" start="2025-02-22T13:34:28.946680" elapsed="6.499114">No keyword with name 'Supprimer Site' found.</status>
+<status status="FAIL" start="2025-02-22T21:26:57.468437" elapsed="0.014193">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-22T13:34:28.490240" elapsed="6.968185"/>
+<status status="FAIL" start="2025-02-22T21:26:56.990804" elapsed="0.494425"/>
 </suite>
 <statistics>
 <total>
@@ -71,11 +34,11 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Supprimer Un Site">Supprimer Un Site</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-22T13:34:28.931625" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot' on line 7: Processing variable file '../Resources/Keywords/Keywords.robot' failed: Importing variable file '../Resources/Keywords/Keywords.robot' failed: ModuleNotFoundError: No module named '.'
+<msg time="2025-02-22T21:26:57.453484" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot' on line 7: Processing variable file '../Resources/Keywords/Keywords.robot' failed: Importing variable file '../Resources/Keywords/Keywords.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -89,6 +52,6 @@ PYTHONPATH:
   C:\Program Files\Python313
   C:\Users\Mohamed\AppData\Roaming\Python\Python313\site-packages
   C:\Program Files\Python313\Lib\site-packages</msg>
-<msg time="2025-02-22T13:34:28.942074" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Site.robot' on line 8: Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Resources\Keywords\Keywords.robot' on line 160: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-02-22T21:26:57.462752" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot' on line 8: Resource file '..\..\Resources\Keywords\Keywords.robot' does not exist.</msg>
 </errors>
 </robot>
