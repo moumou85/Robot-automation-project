@@ -4,9 +4,7 @@ Documentation    Fichier Contenant les mots cles de l'ensemble du projet alfresc
 Library    SeleniumLibrary
 Library    XML
 Variables    ../Resources/Locators/Locators.py
-Variables    ../Resources/Keywords/Keywords.robot
 Resource    ../Resources/Keywords/Keywords.robot
-
 
 *** Variables ***
 
@@ -16,9 +14,10 @@ ${vPassword}    2106860
 ${vBrowser}    chrome
 ${vMessageConnexion}    Idbourkha Mohamed
 
+
 *** Test Cases ***
 
-CT1    
+Sc Suppression d'un groupe
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Supprimer Site    test2
+    Supprimer Groupe    Mohamed2
     Logout

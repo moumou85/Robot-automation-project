@@ -1,57 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-02-22T21:26:56.980950" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-04T14:28:05.805802" rpa="false" schemaversion="5">
+<suite id="s1" name="Supprimer Un Groupe" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Groupe.robot">
 <test id="s1-t1" name="CT1" line="20">
-<kw name="Login">
-<msg time="2025-02-22T21:26:57.472229" level="FAIL">No keyword with name 'Login' found. Did you mean:
-    BuiltIn.Log
-    BuiltIn.Log Many</msg>
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:06.276865" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-04T14:28:06.276425" elapsed="3.993443"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-04T14:28:10.271031" elapsed="0.070928"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:10.345934" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<arg>${Connexion.input_username}</arg>
+<arg>${vLogin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:10.342640" elapsed="0.166219"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:10.510406" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<arg>${Connexion.input_password}</arg>
+<arg>${vPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:10.509420" elapsed="0.149580"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:10.660806" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<arg>${Connexion.btn_connexion}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:10.659549" elapsed="1.866370"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:12.526527" elapsed="0.044928"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:12.604011" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<arg>${Connexion.link_user}</arg>
+<arg>${vMessageConnexion}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-04T14:28:12.571811" elapsed="0.032516"/>
+</kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="FAIL" start="2025-02-22T21:26:57.471937" elapsed="0.002391">No keyword with name 'Login' found. Did you mean:
-    BuiltIn.Log
-    BuiltIn.Log Many</status>
+<status status="PASS" start="2025-03-04T14:28:06.275006" elapsed="6.329552"/>
 </kw>
-<kw name="Supprimer Site">
-<arg>test2</arg>
-<status status="NOT RUN" start="2025-02-22T21:26:57.476912" elapsed="0.000377"/>
+<kw name="Supprimer Groupe" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:12.607776" level="INFO">Clicking element '//span[@id='HEADER_ADMIN_CONSOLE_text']/a'.</msg>
+<arg>${SupprimerGroupe.link_outilsAdmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:12.606277" elapsed="2.369556"/>
 </kw>
-<kw name="Logout">
-<status status="NOT RUN" start="2025-02-22T21:26:57.481062" elapsed="0.000370"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:14.976860" level="INFO">Clicking element '//a[text()='Groupes']'.</msg>
+<arg>${SupprimerGroupe.link_groupes}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:14.976137" elapsed="0.651570"/>
 </kw>
-<status status="FAIL" start="2025-02-22T21:26:57.468437" elapsed="0.014193">No keyword with name 'Login' found. Did you mean:
-    BuiltIn.Log
-    BuiltIn.Log Many</status>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:15.632229" level="INFO">Typing text 'Mohamed2' into text field '//input[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-text']'.</msg>
+<arg>${SupprimerGroupe.input_nomGroupe}</arg>
+<arg>${vIdGroupe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:15.628323" elapsed="0.142929"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:15.772770" level="INFO">Clicking element '//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-button-button']'.</msg>
+<arg>${SupprimerGroupe.btn_rechercher}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:15.771802" elapsed="0.136774"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:15.909770" elapsed="0.249300"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:16.160523" level="INFO">Clicking element '//div[text()='Mohamed2']/ancestor::tr//a[@class='delete']'.</msg>
+<arg>${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:16.159401" elapsed="0.114781"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SupprimerGroupe.btn_supprimer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:16.274789" elapsed="0.275373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:16.552822" level="INFO">Clicking element '//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-remove-button-button']'.</msg>
+<arg>${SupprimerGroupe.btn_supprimer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:16.550832" elapsed="0.115538"/>
+</kw>
+<arg>Mohamed2</arg>
+<status status="PASS" start="2025-03-04T14:28:12.605456" elapsed="4.061279"/>
+</kw>
+<kw name="Logout" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_Acceuil}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:16.668673" elapsed="0.025481"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:16.695137" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
+<arg>${Connexion.link_Acceuil}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:16.694471" elapsed="0.476962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:17.172163" elapsed="0.022940"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:17.197730" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
+<arg>${Connexion.link_user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:17.195420" elapsed="0.092172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Connexion.link_deconnexion}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-04T14:28:17.287941" elapsed="0.029717"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-04T14:28:17.318642" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
+<arg>${Connexion.link_deconnexion}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-04T14:28:17.317980" elapsed="0.083550"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-04T14:28:17.401848" elapsed="2.692152"/>
+</kw>
+<status status="PASS" start="2025-03-04T14:28:16.667672" elapsed="3.427013"/>
+</kw>
+<status status="PASS" start="2025-03-04T14:28:06.273566" elapsed="13.825699"/>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="FAIL" start="2025-02-22T21:26:56.990804" elapsed="0.494425"/>
+<status status="PASS" start="2025-03-04T14:28:05.819613" elapsed="14.285417"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat name="Supprimer Un Groupe" id="s1" pass="1" fail="0" skip="0">Supprimer Un Groupe</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-22T21:26:57.453484" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot' on line 7: Processing variable file '../Resources/Keywords/Keywords.robot' failed: Importing variable file '../Resources/Keywords/Keywords.robot' failed: ModuleNotFoundError: No module named '.'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  c:\Users\Mohamed\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
-  D:\QA\Session 4\Projet de synthese\AlfrescoProject
-  c:\Users\Mohamed\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
-  c:\Users\Mohamed\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
-  C:\Program Files\Python313\python313.zip
-  C:\Program Files\Python313\DLLs
-  C:\Program Files\Python313\Lib
-  C:\Program Files\Python313
-  C:\Users\Mohamed\AppData\Roaming\Python\Python313\site-packages
-  C:\Program Files\Python313\Lib\site-packages</msg>
-<msg time="2025-02-22T21:26:57.462752" level="ERROR">Error in file 'd:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\test.robot' on line 8: Resource file '..\..\Resources\Keywords\Keywords.robot' does not exist.</msg>
 </errors>
 </robot>

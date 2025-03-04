@@ -50,8 +50,6 @@ class CreerEvenement:
     input_dateDevut = "//input[@id='fd']"
     a_jourDumoisDebut1 = "//a[text()='"
     a_jourDumoisDebut2 = "']"
-
-
     input_dateFin = "//input[@id='td']"
     input_heureDebut = "//input[@id='eventEditPanel-start']"
     input_heureFin = "//input[@id='eventEditPanel-end']"
@@ -79,4 +77,15 @@ class SupprimerSite:
     link_delete = "//td[@class='dijitReset dijitMenuItemLabel' and @id='HEADER_DELETE_SITE_text']"
     lbl_delete= "//div[@class='dialog-body']"
     btn_Ok = "//span[@class='dijitReset dijitInline dijitButtonText' and @id='ALF_SITE_SERVICE_DIALOG_CONFIRMATION_label']"
+    
+
+class SupprimerGroupe:
+    link_outilsAdmin = "//span[@id='HEADER_ADMIN_CONSOLE_text']/a"
+    link_groupes = "//a[text()='Groupes']"
+    input_nomGroupe = "//input[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-text']"
+    btn_rechercher = "//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-button-button']"
+    link_supprimer1 = "//div[text()='"
+    link_supprimer2 = "']/ancestor::tr//a[@class='delete']"
+    btn_supprimer = "//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-remove-button-button']"
+
     

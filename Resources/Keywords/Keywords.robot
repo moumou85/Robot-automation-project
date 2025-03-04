@@ -157,25 +157,18 @@ Supprimer Site
     Sleep    2s
 
 
-*** Test Cases ***
-
-CT1
-    Login    ${vURL}    ${vLogin}    ${vPassword}
-    # Creer un fichier Html    MonFichier14    Contenu14    Titre14    Description14  
-    # Supprimer un dossier    Dossier2  
+Supprimer Groupe
+    [Arguments]    ${vIdGroupe}    
+    Click Element    ${SupprimerGroupe.link_outilsAdmin}
+    Click Element    ${SupprimerGroupe.link_groupes}
+    Input Text    ${SupprimerGroupe.input_nomGroupe}    ${vIdGroupe} 
+    Click Element    ${SupprimerGroupe.btn_rechercher}
+    Wait Until Element Is Visible    ${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}
+    Click Element    ${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}
+    Wait Until Element Is Visible    ${SupprimerGroupe.btn_supprimer}
+    Click Element    ${SupprimerGroupe.btn_supprimer}
     
-    Creer Une Liste De Donnees    notresite    "Carnet d'adresses"    Liste1    descriptionListe1
-    Logout
-   
-
-CT2
-       
-    Login    ${vURL}    ${vLogin}    ${vPassword}
-    # Supprimer Definitivement Un Site    mohamed2
-    # Creer un fichier Html    test23    test2345    Description23
-    # Supprimer Un Dossier    test22
-    Supprimer Site    test1
-    Logout
-
 
     
+
+
