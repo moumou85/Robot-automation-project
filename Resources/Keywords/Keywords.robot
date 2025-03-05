@@ -178,10 +178,14 @@ Modifier Page Wiki
     Click Element    ${ModifierPageWiki.btn_enregistrer}
 
 
+Supprimer Un Commentaire Du Module Blog
+    [Arguments]    ${vnomSite}    ${vcommentaire}    ${vtitreBlog}
+    Go To    url=${vURL}/share/page/site/${vnomSite}/blog-postlist
+    Wait Until Element Is Visible    ${SupprimerCommentaire.link_titreBlog1}${vtitreBlog}${SupprimerCommentaire.link_titreBlog2}
+    Click Element    ${SupprimerCommentaire.link_titreBlog1}${vtitreBlog}${SupprimerCommentaire.link_titreBlog2}
+    Mouse Over    ${SupprimerCommentaire.text_commentaire}
+    Wait Until Element Is Visible    ${SupprimerCommentaire.link_supprimerCommentaire1}${vcommentaire}${SupprimerCommentaire.link_supprimerCommentaire2}
+    Click Element    ${SupprimerCommentaire.link_supprimerCommentaire1}${vcommentaire}${SupprimerCommentaire.link_supprimerCommentaire2}
+    Click Element    ${SupprimerCommentaire.btn_supprimer}
 
-*** Test Cases ***
-
-CT1
-        Login    ${vURL}    ${vLogin}    ${vPassword}
-        Modifier Page Wiki    mohamed1    TexteModifie    Mohamed
-        Logout
+        

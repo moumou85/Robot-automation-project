@@ -91,6 +91,16 @@ class SupprimerGroupe:
 
 class ModifierPageWiki:
     link_modifierPage = "//a[text()='Modifier la page']"
-
     input_tag = "//input[@id='template_x002e_wikipage_x002e_wiki-page_x0023_default-tag-input-field']"
     btn_enregistrer = "//button[@id='template_x002e_wikipage_x002e_wiki-page_x0023_default-save-button-button']"
+
+class SupprimerCommentaire:
+    link_titreBlog1 = "//a[text()='"
+    link_titreBlog2 = "']"
+    text_commentaire = "//p[text()='commentaire 2 du test2']"
+    link_supprimerCommentaire1 = "//p[text()='"
+    link_supprimerCommentaire2 = "']/ancestor::div[@class='details']//a[@title='Supprimer le commentaire']"
+    btn_supprimer = "//button[text()='Supprimer']"
+
+
+
