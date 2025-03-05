@@ -169,6 +169,19 @@ Supprimer Groupe
     Click Element    ${SupprimerGroupe.btn_supprimer}
     
 
-    
+Modifier Page Wiki
+    [Arguments]    ${vnomSite}    ${vtexte}    ${vTag}
+    Go To    url=${vURL}/share/page/site/${vnomSite}/wiki-page?title=Main_Page
+    Click Element    ${ModifierPageWiki.link_modifierPage}
+    Execute Javascript    tinyMCE.activeEditor.setContent('${vtexte}')
+    Input Text    ${ModifierPageWiki.input_tag}    ${vTag}
+    Click Element    ${ModifierPageWiki.btn_enregistrer}
 
 
+
+*** Test Cases ***
+
+CT1
+        Login    ${vURL}    ${vLogin}    ${vPassword}
+        Modifier Page Wiki    mohamed1    TexteModifie    Mohamed
+        Logout

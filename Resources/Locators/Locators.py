@@ -88,4 +88,9 @@ class SupprimerGroupe:
     link_supprimer2 = "']/ancestor::tr//a[@class='delete']"
     btn_supprimer = "//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-remove-button-button']"
 
-    
+
+class ModifierPageWiki:
+    link_modifierPage = "//a[text()='Modifier la page']"
+
+    input_tag = "//input[@id='template_x002e_wikipage_x002e_wiki-page_x0023_default-tag-input-field']"
+    btn_enregistrer = "//button[@id='template_x002e_wikipage_x002e_wiki-page_x0023_default-save-button-button']"
