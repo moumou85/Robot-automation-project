@@ -19,5 +19,5 @@ ${vMessageConnexion}    Idbourkha Mohamed
 
 Sc Suppression d'un groupe
     Login    ${vURL}    ${vLogin}    ${vPassword}
-    Supprimer Groupe    Mohamed2
+    Supprimer Groupe    Groupetest
     Logout

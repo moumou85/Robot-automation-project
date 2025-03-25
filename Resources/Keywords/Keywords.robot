@@ -164,6 +164,7 @@ Supprimer Groupe
     [Arguments]    ${vIdGroupe}    
     Click Element    ${SupprimerGroupe.link_outilsAdmin}
     Click Element    ${SupprimerGroupe.link_groupes}
+    Wait Until Element Is Visible    ${SupprimerGroupe.input_nomGroupe}
     Input Text    ${SupprimerGroupe.input_nomGroupe}    ${vIdGroupe} 
     Click Element    ${SupprimerGroupe.btn_rechercher}
     Wait Until Element Is Visible    ${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}

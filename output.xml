@@ -1,146 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-04T22:33:26.461976" rpa="false" schemaversion="5">
-<suite id="s1" name="Supprimer Un Commentaire" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Commentaire.robot">
-<test id="s1-t1" name="Sc Suppression d'un commentaire" line="20">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-25T18:03:41.186371" rpa="false" schemaversion="5">
+<suite id="s1" name="Supprimer Un Groupe" source="d:\QA\Session 4\Projet de synthese\AlfrescoProject\Scripts\Supprimer_Un_Groupe.robot">
+<test id="s1-t1" name="Sc Suppression d'un groupe" line="20">
 <kw name="Login" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:27.079881" level="INFO">Opening browser 'chrome' to base url 'http://34.71.49.164'.</msg>
+<msg time="2025-03-25T18:03:41.695527" level="INFO">Opening browser 'chrome' to base url 'http://35.224.163.244'.</msg>
 <arg>${vURL}</arg>
 <arg>${vBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-04T22:33:27.079420" elapsed="5.297208"/>
+<status status="PASS" start="2025-03-25T18:03:41.695030" elapsed="4.797166"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-04T22:33:32.377464" elapsed="0.064619"/>
+<status status="PASS" start="2025-03-25T18:03:46.494000" elapsed="0.066067"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:32.445138" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<msg time="2025-03-25T18:03:46.564735" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
 <arg>${Connexion.input_username}</arg>
 <arg>${vLogin}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:32.442622" elapsed="0.144422"/>
+<status status="PASS" start="2025-03-25T18:03:46.561125" elapsed="0.140452"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:32.589086" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<msg time="2025-03-25T18:03:46.703210" level="INFO">Typing text '2106860' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
 <arg>${Connexion.input_password}</arg>
 <arg>${vPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:32.587530" elapsed="0.120507"/>
+<status status="PASS" start="2025-03-25T18:03:46.702004" elapsed="0.113360"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:32.709158" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
+<msg time="2025-03-25T18:03:46.817464" level="INFO">Clicking element '//button[@id='page_x002e_components_x002e_slingshot-login_x0023_default-submit-button']'.</msg>
 <arg>${Connexion.btn_connexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:32.708395" elapsed="3.556378"/>
+<status status="PASS" start="2025-03-25T18:03:46.815876" elapsed="3.591918"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Connexion.link_user}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:36.265580" elapsed="0.050471"/>
+<status status="PASS" start="2025-03-25T18:03:50.408128" elapsed="0.040069"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:36.356004" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
+<msg time="2025-03-25T18:03:50.476750" level="INFO">Element '//span[@id='HEADER_USER_MENU_POPUP_text']' contains text 'Idbourkha Mohamed'.</msg>
 <arg>${Connexion.link_user}</arg>
 <arg>${vMessageConnexion}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-03-04T22:33:36.318413" elapsed="0.037893"/>
+<status status="PASS" start="2025-03-25T18:03:50.448540" elapsed="0.028755"/>
 </kw>
 <arg>${vURL}</arg>
 <arg>${vLogin}</arg>
 <arg>${vPassword}</arg>
-<status status="PASS" start="2025-03-04T22:33:27.078018" elapsed="9.278485"/>
+<status status="PASS" start="2025-03-25T18:03:41.692849" elapsed="8.784827"/>
 </kw>
-<kw name="Supprimer Un Commentaire Du Module Blog" owner="Keywords">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:36.359243" level="INFO">Opening url 'http://34.71.49.164/share/page/site/mohamed1/blog-postlist'</msg>
-<arg>url=${vURL}/share/page/site/${vnomSite}/blog-postlist</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-03-04T22:33:36.358516" elapsed="2.536862"/>
+<kw name="Supprimer Groupe" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-25T18:03:50.480854" level="INFO">Clicking element '//span[@id='HEADER_ADMIN_CONSOLE_text']/a'.</msg>
+<arg>${SupprimerGroupe.link_outilsAdmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-25T18:03:50.479556" elapsed="2.010080"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-25T18:03:52.491866" level="INFO">Clicking element '//a[text()='Groupes']'.</msg>
+<arg>${SupprimerGroupe.link_groupes}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-25T18:03:52.490138" elapsed="1.216323"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SupprimerCommentaire.link_titreBlog1}${vtitreBlog}${SupprimerCommentaire.link_titreBlog2}</arg>
+<arg>${SupprimerGroupe.input_nomGroupe}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:38.895908" elapsed="0.041472"/>
+<status status="PASS" start="2025-03-25T18:03:53.707816" elapsed="0.064802"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-25T18:03:53.773789" level="INFO">Typing text 'Groupetest' into text field '//input[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-text']'.</msg>
+<arg>${SupprimerGroupe.input_nomGroupe}</arg>
+<arg>${vIdGroupe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-25T18:03:53.773008" elapsed="0.222185"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:38.938697" level="INFO">Clicking element '//a[text()='test2']'.</msg>
-<arg>${SupprimerCommentaire.link_titreBlog1}${vtitreBlog}${SupprimerCommentaire.link_titreBlog2}</arg>
+<msg time="2025-03-25T18:03:53.996569" level="INFO">Clicking element '//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-search-button-button']'.</msg>
+<arg>${SupprimerGroupe.btn_rechercher}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:38.937701" elapsed="1.455524"/>
-</kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:40.394522" level="INFO">Simulating Mouse Over on element '//p[text()='commentaire 2 du test2']'.</msg>
-<arg>${SupprimerCommentaire.text_commentaire}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:40.393650" elapsed="0.313104"/>
+<status status="PASS" start="2025-03-25T18:03:53.995654" elapsed="0.101483"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SupprimerCommentaire.link_supprimerCommentaire1}${vcommentaire}${SupprimerCommentaire.link_supprimerCommentaire2}</arg>
+<arg>${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:40.707087" elapsed="0.029868"/>
+<status status="PASS" start="2025-03-25T18:03:54.097674" elapsed="0.252355"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:40.738485" level="INFO">Clicking element '//p[text()='commentaire 2 du test2']/ancestor::div[@class='details']//a[@title='Supprimer le commentaire']'.</msg>
-<arg>${SupprimerCommentaire.link_supprimerCommentaire1}${vcommentaire}${SupprimerCommentaire.link_supprimerCommentaire2}</arg>
+<msg time="2025-03-25T18:03:54.352193" level="INFO">Clicking element '//div[text()='Groupetest']/ancestor::tr//a[@class='delete']'.</msg>
+<arg>${SupprimerGroupe.link_supprimer1}${vIdGroupe}${SupprimerGroupe.link_supprimer2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:40.737298" elapsed="0.127230"/>
+<status status="PASS" start="2025-03-25T18:03:54.350554" elapsed="0.095303"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SupprimerGroupe.btn_supprimer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-25T18:03:54.446454" elapsed="0.276075"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:40.868515" level="INFO">Clicking element '//button[text()='Supprimer']'.</msg>
-<arg>${SupprimerCommentaire.btn_supprimer}</arg>
+<msg time="2025-03-25T18:03:54.727625" level="INFO">Clicking element '//button[@id='page_x002e_ctool_x002e_admin-console_x0023_default-remove-button-button']'.</msg>
+<arg>${SupprimerGroupe.btn_supprimer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:40.865127" elapsed="0.208375"/>
+<status status="PASS" start="2025-03-25T18:03:54.723380" elapsed="0.112421"/>
 </kw>
-<arg>mohamed1</arg>
-<arg>commentaire 2 du test2</arg>
-<arg>test2</arg>
-<status status="PASS" start="2025-03-04T22:33:36.357509" elapsed="4.716404"/>
+<arg>Groupetest</arg>
+<status status="PASS" start="2025-03-25T18:03:50.478664" elapsed="4.357524"/>
 </kw>
 <kw name="Logout" owner="Keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Connexion.link_Acceuil}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.076245" elapsed="0.030351"/>
+<status status="PASS" start="2025-03-25T18:03:54.838423" elapsed="0.027876"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:41.108595" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
+<msg time="2025-03-25T18:03:54.867377" level="INFO">Clicking element '//span[@id='HEADER_HOME_text']'.</msg>
 <arg>${Connexion.link_Acceuil}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.107275" elapsed="0.455884"/>
+<status status="PASS" start="2025-03-25T18:03:54.866690" elapsed="0.085873"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-25T18:03:55.381617" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
 <arg>${Connexion.link_user}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.563519" elapsed="0.030637"/>
+<status status="PASS" start="2025-03-25T18:03:54.953203" elapsed="0.655595"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:41.595190" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
+<msg time="2025-03-25T18:03:55.610428" level="INFO">Clicking element '//span[@id='HEADER_USER_MENU_POPUP_text']'.</msg>
 <arg>${Connexion.link_user}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.594480" elapsed="0.092623"/>
+<status status="PASS" start="2025-03-25T18:03:55.609519" elapsed="0.104778"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Connexion.link_deconnexion}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.687590" elapsed="0.026691"/>
+<status status="PASS" start="2025-03-25T18:03:55.714627" elapsed="0.031945"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-04T22:33:41.715220" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
+<msg time="2025-03-25T18:03:55.748436" level="INFO">Clicking element '//td[@id='HEADER_USER_MENU_LOGOUT_text']'.</msg>
 <arg>${Connexion.link_deconnexion}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.714568" elapsed="0.087349"/>
+<status status="PASS" start="2025-03-25T18:03:55.747124" elapsed="0.092620"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-04T22:33:41.802425" elapsed="2.610434"/>
+<status status="PASS" start="2025-03-25T18:03:55.840242" elapsed="2.673500"/>
 </kw>
-<status status="PASS" start="2025-03-04T22:33:41.075186" elapsed="3.338402"/>
+<status status="PASS" start="2025-03-25T18:03:54.837397" elapsed="3.677271"/>
 </kw>
-<status status="PASS" start="2025-03-04T22:33:27.076606" elapsed="17.341632"/>
+<status status="PASS" start="2025-03-25T18:03:41.690103" elapsed="16.826916"/>
 </test>
 <doc>Fichier Contenant les mots cles de l'ensemble du projet alfresco</doc>
-<status status="PASS" start="2025-03-04T22:33:26.477693" elapsed="17.947869"/>
+<status status="PASS" start="2025-03-25T18:03:41.203817" elapsed="17.320659"/>
 </suite>
 <statistics>
 <total>
@@ -149,7 +160,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Supprimer Un Commentaire" id="s1" pass="1" fail="0" skip="0">Supprimer Un Commentaire</stat>
+<stat name="Supprimer Un Groupe" id="s1" pass="1" fail="0" skip="0">Supprimer Un Groupe</stat>
 </suite>
 </statistics>
 <errors>
