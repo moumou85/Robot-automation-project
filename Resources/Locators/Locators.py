@@ -18,7 +18,6 @@ class CreerFichierHtml:
     btn_creer = "//button[@id='template_x002e_create-content_x002e_create-content_x0023_default-form-submit-button']"
 
 
-
 class SupprimerDossier:
     link_mesfichiers = "//span[@id='HEADER_MY_FILES_text']"
     divNomDossier1 = "//div[@class='yui-dt-liner']//a[text()='"
@@ -67,8 +66,6 @@ class CreerListeDonnees:
     div_succeedmessage1 ="//div[@id='template_x002e_datalists_x002e_data-lists_x0023_default-lists']/ul/li/a[text()='"
     div_succeedmessage2 = "']"
 
-
-# Localisateurs pour 
 
 class SupprimerSite:
 

@@ -7,7 +7,7 @@ Variables    ../Locators/Locators.py
 
 *** Variables ***
 
-${vURL}    http://34.71.49.164
+${vURL}    http://35.224.163.244
 ${vLogin}    2106860
 ${vPassword}    2106860
 ${vBrowser}    chrome
@@ -53,6 +53,9 @@ Creer un fichier Html
     Input Text    ${CreerFichierHtml.textarea_description}    ${vdescription}
 
     Click Element    ${CreerFichierHtml.btn_creer}
+
+    
+
 
 
 Supprimer Un Dossier

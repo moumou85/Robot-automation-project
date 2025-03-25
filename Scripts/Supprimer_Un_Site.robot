@@ -8,7 +8,7 @@ Resource    ../Resources/Keywords/Keywords.robot
 
 *** Variables ***
 
-${vURL}    http://34.71.49.164
+${vURL}    http://35.224.163.244
 ${vLogin}    2106860
 ${vPassword}    2106860
 ${vBrowser}    chrome
